@@ -45,7 +45,10 @@ public abstract class AbstractUser implements IUser{
 
     public abstract void addAccount(AbstractAccount account);
     public abstract void removeAccount(AbstractAccount account);
-    public abstract void sendEmail();
+
+    //TODO
+    public abstract void sendEmail(String message);
+    public abstract String notify(String message, double amount, double balance, double bound);
 
     public String getName() {
         return name;
