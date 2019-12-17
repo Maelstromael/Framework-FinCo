@@ -37,4 +37,11 @@ public class UserService implements IUserService {
     public AbstractAccount addAccount(AbstractAccount account) {
         return accountIDao.save(account);
     }
+
+    @Override
+    public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user) {
+        System.err.println("UserService :: createAccount() Entered");
+        SimpleFactory simpleFactory = SimpleFactory.getInstance();
+        return accountIDao.save(simpleFactory.createAccount(accountTypes, accountNumber, user));
+    }
 }

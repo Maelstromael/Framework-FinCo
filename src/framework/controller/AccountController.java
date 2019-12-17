@@ -2,8 +2,8 @@ package framework.controller;
 
 import framework.account.AbstractAccount;
 import framework.service.IAccountService;
-import framework.user.AbstractUser;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AccountController extends AbstractAccountController {
@@ -13,11 +13,13 @@ public class AccountController extends AbstractAccountController {
 
     @Override
     public boolean deposit(String name, double amount) {
+        System.err.println("AccountController :: deposit() Entered");
         return accountService.deposit(name,amount);
     }
 
     @Override
     public boolean withdraw(String name, double amount) {
+        System.err.println("AccountController :: withdraw() Entered");
         return accountService.withdraw(name,amount);
     }
 
@@ -28,13 +30,6 @@ public class AccountController extends AbstractAccountController {
 
     @Override
     public List<AbstractAccount> getAllAccounts() {
-        return accountService.getAllAccounts();
+        return accountService.getAll();
     }
-
-    @Override
-    public AbstractUser getUser(String name) {
-        return accountService.getUser(name);
-    }
-
-
 }

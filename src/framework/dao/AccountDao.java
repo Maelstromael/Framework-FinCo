@@ -15,16 +15,17 @@ public class AccountDao implements IAccountDao {
 
     @Override
     public AbstractAccount save(AbstractAccount account) {
+        System.err.println("AccountIdao :: save() Entered");
         if (account!=null){
-            System.out.println("account enters");
+            System.err.println("AccountIdao :: save() Entered: "+account.toString());
+            //changes --
             accountList.put(account.getAccountNbr(),account);
-            System.out.println("account saved");
             return account;
         }
         return null;
     }
 
-    public static AccountDao  getAccountDao() {
+    public static AccountDao getAccountDao() {
         if (accountDao==null){
             accountDao=new AccountDao();
         }
@@ -40,7 +41,8 @@ public class AccountDao implements IAccountDao {
         return statements;
     }
 
-    public List<AbstractAccount> getAllAccounts(){
+    //changes - private to public
+    private List<AbstractAccount> getAllAccounts(){
         List<AbstractAccount> accounts = new ArrayList<>();
         Iterator<Map.Entry<String, AbstractAccount>> iterator = accountList.entrySet().iterator();
         while (iterator.hasNext()) {
@@ -48,12 +50,6 @@ public class AccountDao implements IAccountDao {
             accounts.add(account);
         }
         return accounts;
-    }
-
-
-    public double getAccountBalance(String name) {
-        System.out.println("Account holder: "+getByName(name).getUser().getName());
-        return getByName(name).getCurrentBalance();
     }
 
     @Override
@@ -68,19 +64,33 @@ public class AccountDao implements IAccountDao {
 
     @Override
     public AbstractAccount get(String id) {
+        System.err.println("AccountIDao :: get() Entered name: "+id);
         return accountList.get(id);
     }
 
     @Override
     public AbstractAccount getByName(String name) {
+        System.err.println("AccountIDao :: getbyName() Entered name: "+name);
         Iterator<Map.Entry<String, AbstractAccount>> iterator = accountList.entrySet().iterator();
         while (iterator.hasNext()){
             AbstractAccount account = iterator.next().getValue();
+            System.err.println(account.toString());
             if (name.equals(account.getUser().getName())){
                 return account;
             }
         }
         return null;
+    }
+
+    @Override
+    public List<AbstractAccount> getAll() {
+        List<AbstractAccount> accounts = new ArrayList<>();
+        Iterator<Map.Entry<String, AbstractAccount>> iterator = accountList.entrySet().iterator();
+        while (iterator.hasNext()) {
+            AbstractAccount account = iterator.next().getValue();
+            accounts.add(account);
+        }
+        return accounts;
     }
 
 

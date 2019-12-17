@@ -11,8 +11,9 @@ import java.util.List;
 
 public abstract class AbstractAccount implements IAccount{
     private String accNbr;
-    protected double currentBalance =0.0;
+    protected double currentBalance = 0.0;
     protected AbstractUser user;
+    //changes --
     private AccountTypes accTypes;
 
     private List<IEntry> entries = new ArrayList<>();
@@ -38,6 +39,9 @@ public abstract class AbstractAccount implements IAccount{
             currentBalance+=amount;
             Entry entry = new Entry(amount, LocalDate.now());
             this.addEntry(entry);
+            //TODO: update db balance of account
+
+            //TODO: call notify
             return true;
         }
         else {
@@ -50,6 +54,10 @@ public abstract class AbstractAccount implements IAccount{
             currentBalance-=amount;
             Entry entry = new Entry(-amount,LocalDate.now());
             this.addEntry(entry);
+
+            //TODO: update db balance of account
+
+            //TODO: call notify
             return true;
         }
         return false;
@@ -69,14 +77,6 @@ public abstract class AbstractAccount implements IAccount{
         return null;
     }
 
-    public AccountTypes getAccTypes() {
-        return accTypes;
-    }
-
-    public void setAccTypes(AccountTypes accTypes) {
-        this.accTypes = accTypes;
-    }
-
     public String getAccountNbr() {
         return accNbr;
     }
@@ -91,6 +91,15 @@ public abstract class AbstractAccount implements IAccount{
                 "accNbr='" + accNbr + '\'' +
                 ", currentBalance=" + currentBalance +
                 ", user=" + user +
-                '}' +"\n";
+                '}';
+    }
+
+    // changes --
+    public AccountTypes getAccTypes() {
+        return accTypes;
+    }
+
+    public void setAccTypes(AccountTypes accTypes) {
+        this.accTypes = accTypes;
     }
 }

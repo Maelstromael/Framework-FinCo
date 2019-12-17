@@ -7,6 +7,5 @@ public interface IDao<T> {
     boolean delete(T t);
     T get(String id);
     T getByName(String name);
-    List<T> getAllAccounts();
-    double getAccountBalance(String name);
+    List<T> getAll();
 }

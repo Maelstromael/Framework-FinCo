@@ -11,5 +11,5 @@ public interface IUserService extends IService {
     AbstractUser createUser(UserType type,String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts);
     boolean removeAccount(String name);
     AbstractAccount addAccount(AbstractAccount account);
-    public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user);
+    AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user);
 }
