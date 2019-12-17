@@ -1,5 +1,6 @@
 package framework.account;
 
+import framework.AccountTypes;
 import framework.entry.Entry;
 import framework.entry.IEntry;
 import framework.user.AbstractUser;
@@ -12,6 +13,7 @@ public abstract class AbstractAccount implements IAccount{
     private String accNbr;
     protected double currentBalance =0.0;
     protected AbstractUser user;
+    private AccountTypes accTypes;
 
     private List<IEntry> entries = new ArrayList<>();
 
@@ -67,11 +69,28 @@ public abstract class AbstractAccount implements IAccount{
         return null;
     }
 
+    public AccountTypes getAccTypes() {
+        return accTypes;
+    }
+
+    public void setAccTypes(AccountTypes accTypes) {
+        this.accTypes = accTypes;
+    }
+
     public String getAccountNbr() {
         return accNbr;
     }
 
     public double getCurrentBalance() {
         return currentBalance;
+    }
+
+    @Override
+    public String toString() {
+        return "AbstractAccount{" +
+                "accNbr='" + accNbr + '\'' +
+                ", currentBalance=" + currentBalance +
+                ", user=" + user +
+                '}' +"\n";
     }
 }

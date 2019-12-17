@@ -1,5 +1,6 @@
 package framework.controller;
 
+import framework.AccountTypes;
 import framework.UserType;
 import framework.account.AbstractAccount;
 import framework.factory.AbstractUserFactory;
@@ -21,4 +22,6 @@ public abstract class AbstractUserController implements IUserController {
     public abstract boolean removeAccount(String name);
 
     public abstract AbstractAccount addAccount(AbstractAccount account);
+
+    public abstract AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user);
 }

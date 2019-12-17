@@ -16,12 +16,15 @@ public class AccountDao implements IAccountDao {
     @Override
     public AbstractAccount save(AbstractAccount account) {
         if (account!=null){
-            return accountList.put(account.getAccountNbr(),account);
+            System.out.println("account enters");
+            accountList.put(account.getAccountNbr(),account);
+            System.out.println("account saved");
+            return account;
         }
         return null;
     }
 
-    public static AccountDao getAccountDao() {
+    public static AccountDao  getAccountDao() {
         if (accountDao==null){
             accountDao=new AccountDao();
         }
@@ -37,7 +40,7 @@ public class AccountDao implements IAccountDao {
         return statements;
     }
 
-    private List<AbstractAccount> getAllAccounts(){
+    public List<AbstractAccount> getAllAccounts(){
         List<AbstractAccount> accounts = new ArrayList<>();
         Iterator<Map.Entry<String, AbstractAccount>> iterator = accountList.entrySet().iterator();
         while (iterator.hasNext()) {
@@ -45,6 +48,12 @@ public class AccountDao implements IAccountDao {
             accounts.add(account);
         }
         return accounts;
+    }
+
+
+    public double getAccountBalance(String name) {
+        System.out.println("Account holder: "+getByName(name).getUser().getName());
+        return getByName(name).getCurrentBalance();
     }
 
     @Override

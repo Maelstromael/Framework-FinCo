@@ -1,6 +1,10 @@
 package framework.controller;
 
+import framework.account.AbstractAccount;
 import framework.service.IAccountService;
+import framework.user.AbstractUser;
+
+import java.util.List;
 
 public class AccountController extends AbstractAccountController {
     public AccountController(IAccountService accountService) {
@@ -21,4 +25,16 @@ public class AccountController extends AbstractAccountController {
     public double getBalance(String name) {
         return accountService.getBalance(name);
     }
+
+    @Override
+    public List<AbstractAccount> getAllAccounts() {
+        return accountService.getAllAccounts();
+    }
+
+    @Override
+    public AbstractUser getUser(String name) {
+        return accountService.getUser(name);
+    }
+
+
 }

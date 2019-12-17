@@ -1,5 +1,6 @@
 package framework.controller;
 
+import framework.AccountTypes;
 import framework.UserType;
 import framework.account.AbstractAccount;
 import framework.service.IService;
@@ -27,4 +28,10 @@ public class UserController extends AbstractUserController {
     public AbstractAccount addAccount(AbstractAccount account) {
         return service.addAccount(account);
     }
+
+    @Override
+    public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user) {
+        return service.createAccount(accountTypes, accountNumber, user);
+    }
+
 }

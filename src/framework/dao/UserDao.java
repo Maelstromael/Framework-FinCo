@@ -1,9 +1,11 @@
 package framework.dao;
 
-import framework.account.AbstractAccount;
 import framework.user.AbstractUser;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 public class UserDao implements IUserDao {
     private HashMap<String,AbstractUser> userList = new HashMap<>();
@@ -11,9 +13,11 @@ public class UserDao implements IUserDao {
     @Override
     public AbstractUser save(AbstractUser user) {
         if (user!=null){
+            System.out.println("user not null");
             if (user.getId()==null || user.getId().equals("")){
                 user.setId(++lastId+"");
             }
+            System.out.println("user saved");
             userList.put(user.getId(),user);
             return user;
         }
@@ -31,7 +35,28 @@ public class UserDao implements IUserDao {
 
     @Override
     public AbstractUser get(String id) {
-
         return userList.get(id);
+    }
+
+    @Override
+    public AbstractUser getByName(String name) {
+        Iterator<Map.Entry<String, AbstractUser>> iterator = userList.entrySet().iterator();
+        while (iterator.hasNext()){
+            AbstractUser user = iterator.next().getValue();
+            if (name.equals(user.getName())){
+                return user;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public List<AbstractUser> getAllAccounts() {
+        return null;
+    }
+
+    @Override
+    public double getAccountBalance(String name) {
+        return 0;
     }
 }
