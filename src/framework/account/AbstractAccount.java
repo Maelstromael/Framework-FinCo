@@ -74,4 +74,13 @@ public abstract class AbstractAccount implements IAccount{
     public double getCurrentBalance() {
         return currentBalance;
     }
+
+    @Override
+    public String toString() {
+        return "AbstractAccount{" +
+                "accNbr='" + accNbr + '\'' +
+                ", currentBalance=" + currentBalance +
+                ", user=" + user +
+                '}';
+    }
 }

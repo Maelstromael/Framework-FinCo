@@ -74,4 +74,18 @@ public abstract class AbstractUser implements IUser{
     /*public AbstractAccount getAccount() {
         return account;
     }*/
+
+    @Override
+    public String toString() {
+        return "AbstractUser{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", street='" + street + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", email='" + email + '\'' +
+                ", zip='" + zip + '\'' +
+                ", accounts=" + accounts +
+                '}';
+    }
 }
