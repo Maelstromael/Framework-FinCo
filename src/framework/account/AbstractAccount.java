@@ -39,6 +39,7 @@ public abstract class AbstractAccount implements IAccount{
             currentBalance+=amount;
             Entry entry = new Entry(amount, LocalDate.now());
             this.addEntry(entry);
+            //TODO: update db balance of account
             return true;
         }
         else {
@@ -51,6 +52,8 @@ public abstract class AbstractAccount implements IAccount{
             currentBalance-=amount;
             Entry entry = new Entry(-amount,LocalDate.now());
             this.addEntry(entry);
+
+            //TODO: update db balance of account
             return true;
         }
         return false;

@@ -12,8 +12,10 @@ public class AccountService implements IAccountService {
 
     @Override
     public boolean deposit(String name, double amount) {
+        System.err.println("AccountService :: deposit() name: "+name);
         if (name!=null){
-            AbstractAccount account = accountIDao.getByName(name);
+            AbstractAccount account = accountIDao.get(name);
+            System.err.println("AccountService :: withdraw() Entered: accountIDao.get(name) ");
             if (account!=null)
             return account.deposit(amount);
         }
@@ -22,10 +24,13 @@ public class AccountService implements IAccountService {
 
     @Override
     public boolean withdraw(String name, double amount) {
+        System.err.println("AccountService :: withdraw() Entered");
         if (name!=null){
-            AbstractAccount account = accountIDao.getByName(name);
-            if (account!=null)
+            AbstractAccount account = accountIDao.get(name);
+            if (account!=null) {
+                System.err.println("AccountService :: withdraw() Entered: accountIDao.get(name) ");
                 return account.withdraw(amount);
+            }
         }
         return false;
     }

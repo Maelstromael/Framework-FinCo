@@ -64,14 +64,17 @@ public class AccountDao implements IAccountDao {
 
     @Override
     public AbstractAccount get(String id) {
+        System.err.println("AccountIDao :: get() Entered name: "+id);
         return accountList.get(id);
     }
 
     @Override
     public AbstractAccount getByName(String name) {
+        System.err.println("AccountIDao :: getbyName() Entered name: "+name);
         Iterator<Map.Entry<String, AbstractAccount>> iterator = accountList.entrySet().iterator();
         while (iterator.hasNext()){
             AbstractAccount account = iterator.next().getValue();
+            System.err.println(account.toString());
             if (name.equals(account.getUser().getName())){
                 return account;
             }

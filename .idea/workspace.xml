@@ -2,33 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3767cf8-33d0-47be-979c-fe5b5f2a7874" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/framework/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/account/AbstractAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/account/AbstractAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/AbstractAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/controller/AbstractAccountController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/controller/AccountController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/dao/AccountDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/IDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/dao/IDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/SimpleFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/factory/SimpleFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Deposit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Deposit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw$SymAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/IAccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/service/IAccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/AbstractUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/AbstractUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/controller/AbstractAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/controller/AbstractAccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/framework/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/controller/AccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/framework/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/dao/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/IDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/framework/gui/Finco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/gui/Finco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/gui/JDialog_AddAcc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/gui/JDialog_AddAcc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/gui/JDialog_Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/gui/JDialog_Deposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/gui/JDialog_Withdraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/gui/JDialog_Withdraw.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/framework/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/service/IAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/IAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

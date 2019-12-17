@@ -1,4 +1,9 @@
 package framework.gui;
+import framework.Utils;
+import framework.controller.AbstractUserController;
+import framework.controller.AccountController;
+import framework.service.AccountService;
+
 import java.awt.*;
 import javax.swing.*;
 
@@ -35,7 +40,7 @@ public class JDialog_Withdraw extends javax.swing.JDialog
 		getContentPane().add(JLabel2);
 		JLabel2.setForeground(java.awt.Color.black);
 		JLabel2.setBounds(12,36,48,24);
-		JTextField_NAME.setEditable(false);
+		//JTextField_NAME.setEditable(false);
 		getContentPane().add(JTextField_NAME);
 		JTextField_NAME.setBounds(84,12,156,20);
 		getContentPane().add(JTextField_AMT);
@@ -84,7 +89,23 @@ public class JDialog_Withdraw extends javax.swing.JDialog
 
 	void JButtonOK_actionPerformed(java.awt.event.ActionEvent event)
 	{
-        parentframe.amountDeposit=JTextField_AMT.getText();
+       //
+		AccountController auc = new AccountController(new AccountService());
+		if(JTextField_AMT.getText()!=null && !JTextField_AMT.getText().equals("") && Utils.isNumeric(JTextField_AMT.getText())) {
+			boolean res = auc.withdraw(JTextField_NAME.getText(), Double.parseDouble(JTextField_AMT.getText()));
+			if(res){
+				Utils.showJoptMessage(parentframe, "Withdrawal of "+JTextField_AMT.getText()+" Successful");
+				parentframe.amountDeposit=JTextField_AMT.getText();
+			}
+			else {
+				Utils.showJoptMessage(parentframe, "Ooops... Withdrawal of "+JTextField_AMT.getText()+" Failed. InSufficient Balance");
+				return;
+			}
+		}
+		else {
+			Utils.showJoptMessage(parentframe, "Ooops... Invalid");
+			return;
+		}
 		dispose();
 	}
 
@@ -92,4 +113,6 @@ public class JDialog_Withdraw extends javax.swing.JDialog
 	{
 		dispose();
 	}
+
+
 }

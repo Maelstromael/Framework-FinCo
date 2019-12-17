@@ -1,4 +1,5 @@
 package framework.gui;
+import framework.Utils;
 import framework.controller.AccountController;
 import framework.service.AccountService;
 
@@ -87,7 +88,22 @@ public class JDialog_Deposit extends javax.swing.JDialog
 	{
         //parentframe.amountDeposit=JTextField_Deposit.getText();
 		AccountController auc = new AccountController(new AccountService());
-		//auc.deposit()
+		if(JTextField_Deposit.getText()!=null && !JTextField_Deposit.getText().equals("") && Utils.isNumeric(JTextField_Deposit.getText())) {
+			boolean res = auc.deposit(JTextField_NAME.getText(), Double.parseDouble(JTextField_Deposit.getText()));
+			if(res){
+				Utils.showJoptMessage(parentframe, "Deposit of "+JTextField_Deposit.getText()+" Successful");
+				parentframe.amountDeposit=JTextField_Deposit.getText();
+			}
+			else {
+				Utils.showJoptMessage(parentframe, "Ooops... Deposit of "+JTextField_Deposit.getText()+" Failed. InSufficient Balance");
+				return;
+			}
+		}
+		else {
+			Utils.showJoptMessage(parentframe, "Ooops... Invalid Amount");
+			return;
+		}
+
         dispose();
 	}
 
@@ -95,5 +111,7 @@ public class JDialog_Deposit extends javax.swing.JDialog
 	{
 		dispose();
 	}
+
+
 
 }
