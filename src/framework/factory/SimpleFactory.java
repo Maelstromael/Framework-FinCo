@@ -24,11 +24,15 @@ public class SimpleFactory {
         AbstractUserFactory iFactory = null;
         if (userType==UserType.COMPANY){
             iFactory = new CompanyFactory();
-            return iFactory.createUser(name,street,city,state,email,zip,accounts);
+            AbstractUser newUser = iFactory.createUser(name,street,city,state,email,zip,accounts);
+            newUser.setUserType(userType);
+            return newUser;
         }
         else if (userType==UserType.PERSON){
             iFactory = new PersonFactory();
-            return iFactory.createUser(name,street,city,state,email,zip,accounts);
+            AbstractUser newUser =  iFactory.createUser(name,street,city,state,email,zip,accounts);
+            newUser.setUserType(userType);
+            return newUser;
         }
         return null;
     }
@@ -37,7 +41,9 @@ public class SimpleFactory {
         AbstractAccountFactory accountFactory=null;
         if (accountTypes==AccountTypes.BASIC){
             accountFactory = new AccountFactory();
-            return accountFactory.createAccount(accountNumber,user);
+            AbstractAccount newAcc = accountFactory.createAccount(accountNumber,user);
+            newAcc.setAccTypes(accountTypes);
+            return newAcc;
         }
         return null;
     }

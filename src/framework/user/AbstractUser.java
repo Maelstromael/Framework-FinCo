@@ -1,5 +1,6 @@
 package framework.user;
 
+import framework.UserType;
 import framework.account.AbstractAccount;
 
 import java.util.List;
@@ -12,6 +13,7 @@ public abstract class AbstractUser implements IUser{
     private String state;
     private String email;
     private String zip;
+    private UserType userType;
     protected List<AbstractAccount> accounts;
 
     public AbstractUser(String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts) {
@@ -74,6 +76,14 @@ public abstract class AbstractUser implements IUser{
     /*public AbstractAccount getAccount() {
         return account;
     }*/
+
+    public UserType getUserType() {
+        return userType;
+    }
+
+    public void setUserType(UserType userType) {
+        this.userType = userType;
+    }
 
     @Override
     public String toString() {

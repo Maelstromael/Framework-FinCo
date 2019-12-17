@@ -5,6 +5,7 @@ import framework.user.AbstractUser;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 public class UserDao implements IUserDao {
@@ -45,6 +46,11 @@ public class UserDao implements IUserDao {
                 return user;
             }
         }
+        return null;
+    }
+
+    @Override
+    public List<AbstractUser> getAll() {
         return null;
     }
 }

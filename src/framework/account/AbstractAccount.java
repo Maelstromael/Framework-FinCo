@@ -1,5 +1,6 @@
 package framework.account;
 
+import framework.AccountTypes;
 import framework.entry.Entry;
 import framework.entry.IEntry;
 import framework.user.AbstractUser;
@@ -10,8 +11,10 @@ import java.util.List;
 
 public abstract class AbstractAccount implements IAccount{
     private String accNbr;
-    protected double currentBalance =0.0;
+    protected double currentBalance = 0.0;
     protected AbstractUser user;
+    //changes --
+    private AccountTypes accTypes;
 
     private List<IEntry> entries = new ArrayList<>();
 
@@ -82,5 +85,14 @@ public abstract class AbstractAccount implements IAccount{
                 ", currentBalance=" + currentBalance +
                 ", user=" + user +
                 '}';
+    }
+
+    // changes --
+    public AccountTypes getAccTypes() {
+        return accTypes;
+    }
+
+    public void setAccTypes(AccountTypes accTypes) {
+        this.accTypes = accTypes;
     }
 }

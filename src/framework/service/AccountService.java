@@ -8,7 +8,7 @@ import framework.entry.IEntry;
 import java.util.List;
 
 public class AccountService implements IAccountService {
-    private IDao<AbstractAccount> accountIDao = AccountDao.getAccountDao();
+    private IDao<AbstractAccount> accountIDao = AccountDao.getAccountDao(); //singleton pattern
 
     @Override
     public boolean deposit(String name, double amount) {
@@ -33,6 +33,11 @@ public class AccountService implements IAccountService {
     @Override
     public double getBalance(String name) {
         return 0;
+    }
+
+    @Override
+    public List<AbstractAccount> getAll() {
+        return accountIDao.getAll();
     }
 
     public List<IEntry> generateStatement(String name){

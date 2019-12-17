@@ -3,7 +3,8 @@ package framework.controller;
 import framework.account.AbstractAccount;
 import framework.service.IAccountService;
 
-import java.util.List;
+import java.util.*;
+import java.util.ArrayList;
 
 public abstract class AbstractAccountController implements IAccountController{
     protected IAccountService accountService;
@@ -15,5 +16,5 @@ public abstract class AbstractAccountController implements IAccountController{
     public abstract boolean deposit(String name, double amount);
     public abstract boolean withdraw(String name, double amount);
     public abstract double getBalance(String name);
-    //public abstract List<AbstractAccount> getAllAccounts();
+    public abstract List<AbstractAccount> getAllAccounts();
 }

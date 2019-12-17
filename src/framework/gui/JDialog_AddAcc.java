@@ -191,7 +191,7 @@ public class JDialog_AddAcc extends javax.swing.JDialog
 //           parentframe.accountType="Ch";
 //           else
 //           parentframe.accountType="S";
-//	   parentframe.newaccount=true;
+
 		JTextField[] fieldArr = {JTextField_ACNR,JTextField_NAME,JTextField_STR,JTextField_CT,JTextField_ZIP,JTextField_ST, JTextField_EM};
 		ArrayList<JTextField> listFields = new ArrayList<>();
 		listFields.addAll(Arrays.asList(fieldArr));
@@ -201,9 +201,10 @@ public class JDialog_AddAcc extends javax.swing.JDialog
 			AbstractUser user  = uc.createUser(UserType.PERSON,JTextField_NAME.getText(), JTextField_STR.getText(), JTextField_CT.getText(), JTextField_ST.getText(), JTextField_EM.getText(), JTextField_ZIP.getText(), null);
 			if(user != null){
 				AbstractAccount acc = uc.createAccount(AccountTypes.BASIC,JTextField_ACNR.getText(),user);
-				if(acc != null)
+				if(acc != null) {
 					JOptionPane.showMessageDialog(parentframe, "Account Creation Successful");
-				else {
+					parentframe.newaccount=true;
+				} else {
 					JOptionPane.showMessageDialog(parentframe, "Ooops.... Account Creation Failed");
 					return;
 				}

@@ -1,4 +1,7 @@
 package framework.gui;
+import framework.controller.AccountController;
+import framework.service.AccountService;
+
 import java.awt.*;
 import javax.swing.*;
 
@@ -82,7 +85,9 @@ public class JDialog_Deposit extends javax.swing.JDialog
 
 	void JButtonOK_actionPerformed(java.awt.event.ActionEvent event)
 	{
-        parentframe.amountDeposit=JTextField_Deposit.getText();
+        //parentframe.amountDeposit=JTextField_Deposit.getText();
+		AccountController auc = new AccountController(new AccountService());
+		//auc.deposit()
         dispose();
 	}
 

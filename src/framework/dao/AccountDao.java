@@ -42,7 +42,7 @@ public class AccountDao implements IAccountDao {
     }
 
     //changes - private to public
-    public List<AbstractAccount> getAllAccounts(){
+    private List<AbstractAccount> getAllAccounts(){
         List<AbstractAccount> accounts = new ArrayList<>();
         Iterator<Map.Entry<String, AbstractAccount>> iterator = accountList.entrySet().iterator();
         while (iterator.hasNext()) {
@@ -77,6 +77,17 @@ public class AccountDao implements IAccountDao {
             }
         }
         return null;
+    }
+
+    @Override
+    public List<AbstractAccount> getAll() {
+        List<AbstractAccount> accounts = new ArrayList<>();
+        Iterator<Map.Entry<String, AbstractAccount>> iterator = accountList.entrySet().iterator();
+        while (iterator.hasNext()) {
+            AbstractAccount account = iterator.next().getValue();
+            accounts.add(account);
+        }
+        return accounts;
     }
 
 
