@@ -37,7 +37,15 @@ public class AccountService implements IAccountService {
 
     @Override
     public double getBalance(String name) {
-        return 0;
+        System.err.println("AccountService :: getBalance() Entered");
+        if (name!=null){
+            AbstractAccount account = accountIDao.get(name);
+            if (account!=null) {
+                System.err.println("AccountService :: getBalance() Entered: accountIDao.get(name) ");
+                return account.getCurrentBalance();
+            }
+        }
+        return 0.0;
     }
 
     @Override
