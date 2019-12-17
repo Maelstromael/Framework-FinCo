@@ -1,11 +1,8 @@
 package banking.factory;
 
 import banking.enumeration.BankAccountTypes;
-import framework.AccountTypes;
-import framework.UserType;
 import framework.account.AbstractAccount;
 import framework.factory.AbstractAccountFactory;
-import framework.factory.AccountFactory;
 import framework.factory.SimpleFactory;
 import framework.user.AbstractUser;
 

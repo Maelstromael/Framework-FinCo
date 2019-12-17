@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d3767cf8-33d0-47be-979c-fe5b5f2a7874" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/banking/account/AbstractBankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/account/AbstractBankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creditcard/account/AbstractCreditCardAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creditcard/account/AbstractCreditCardAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creditcard/account/BronzeCreditCardAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creditcard/account/BronzeCreditCardAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creditcard/account/GoldCreditCardAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creditcard/account/GoldCreditCardAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creditcard/account/SilverCreditCardAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creditcard/account/SilverCreditCardAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/user/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/user/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banking/factory/SavingsAccountFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/factory/SavingsAccountFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
