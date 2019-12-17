@@ -18,11 +18,11 @@ public class UserService implements IUserService {
     @Override
     public AbstractUser createUser(UserType type,String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts) {
         SimpleFactory simpleFactory = SimpleFactory.getInstance();
-        return userIDao.save(simpleFactory.creatUser(type, name, street, city, state, email, zip, accounts));
+        return userIDao.save(simpleFactory.createUser(type, name, street, city, state, email, zip, accounts));
     }
 
     @Override
-    public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user) {
+    public AbstractAccount createAccou  nt(AccountTypes accountTypes, String accountNumber, AbstractUser user) {
         System.err.println("UserService :: createAccount() Entered");
         SimpleFactory simpleFactory = SimpleFactory.getInstance();
         return accountIDao.save(simpleFactory.createAccount(accountTypes, accountNumber, user));
