@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3767cf8-33d0-47be-979c-fe5b5f2a7874" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/controller/AbstractAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/controller/AbstractAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/controller/AbstractUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/controller/AbstractUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/dao/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/IDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/service/IAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/IAccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" afterDir="false" />
-    </list>
+    <list default="true" id="d3767cf8-33d0-47be-979c-fe5b5f2a7874" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +66,7 @@
       <updated>1576525845725</updated>
       <workItem from="1576525851323" duration="15567000" />
       <workItem from="1576548362913" duration="10849000" />
-      <workItem from="1576598676760" duration="18278000" />
+      <workItem from="1576598676760" duration="18742000" />
     </task>
     <servers />
   </component>
