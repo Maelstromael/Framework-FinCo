@@ -34,4 +34,10 @@ public class UserDao implements IUserDao {
 
         return userList.get(id);
     }
+
+    @Override
+    public AbstractUser getByName(String name) {
+        //TODO
+        return null;
+    }
 }
