@@ -39,6 +39,10 @@ public abstract class AbstractUser implements IUser{
         return id;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public abstract void addAccount(AbstractAccount account);
     public abstract void removeAccount(AbstractAccount account);
     public abstract void sendEmail();

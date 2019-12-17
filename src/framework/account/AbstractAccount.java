@@ -1,15 +1,17 @@
 package framework.account;
 
+import framework.entry.Entry;
 import framework.entry.IEntry;
 import framework.user.AbstractUser;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AbstractAccount implements IAccount{
     private String accNbr;
     protected double currentBalance =0.0;
-    private AbstractUser user;
+    protected AbstractUser user;
 
     private List<IEntry> entries = new ArrayList<>();
 
@@ -25,9 +27,37 @@ public abstract class AbstractAccount implements IAccount{
             this.currentBalance=0.0;
         }
 
-    /*public AbstractUser getUser() {
+    public AbstractUser getUser() {
         return user;
-    }*/
+    }
+
+    public boolean deposit(double amount){
+        if (amount>0){
+            currentBalance+=amount;
+            Entry entry = new Entry(amount, LocalDate.now());
+            this.addEntry(entry);
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public boolean withdraw(double amount){
+        if (amount<=currentBalance){
+            currentBalance-=amount;
+            Entry entry = new Entry(-amount,LocalDate.now());
+            this.addEntry(entry);
+            return true;
+        }
+        return false;
+    }
+
+    public List<IEntry> getEntries(){
+        return entries;
+    }
+
+
 
     public IEntry addEntry(IEntry entry){
         if (entry!=null) {
