@@ -20,7 +20,7 @@ public class SimpleFactory {
         return simpleFactory;
     }
 
-    public AbstractUser createUser(Enum userType, String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts){
+    public AbstractUser createUser(UserType userType, String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts){
         AbstractUserFactory iFactory = null;
         if (userType==UserType.COMPANY){
             iFactory = new CompanyFactory();
@@ -37,7 +37,7 @@ public class SimpleFactory {
         return null;
     }
 
-    public AbstractAccount createAccount(Enum accountTypes, String accountNumber, AbstractUser user){
+    public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user){
         AbstractAccountFactory accountFactory=null;
         if (accountTypes==AccountTypes.BASIC){
             accountFactory = new AccountFactory();
