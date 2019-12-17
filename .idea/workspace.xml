@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3767cf8-33d0-47be-979c-fe5b5f2a7874" name="Default Changelist" comment="">
+    <list default="true" id="b32c8b68-8775-4f9b-a26e-c20ac52670a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banking/account/AbstractBankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banking/account/CheckingsAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banking/account/SavingsAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banking/enumeration/BankAccountTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banking/factory/CheckingAccountFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/banking/factory/SavingsAccountFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creditcard/account/AbstractCreditCardAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creditcard/account/BronzeCreditCardAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creditcard/account/GoldCreditCardAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creditcard/account/SilverCreditCardAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creditcard/enumeration/CreditCardTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creditcard/factory/BronzeAccountFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creditcard/factory/CreditCardSimpleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creditcard/factory/GoldAccountFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/creditcard/factory/SilverAccountFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/user/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/user/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/Person.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -28,47 +50,26 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/framework/gui" />
   </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/framework/gui" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="Finco" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="framework.gui.Finco" />
-      <module name="project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="framework.gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Finco" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -100,5 +101,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1576619343233">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1576619343233" />
+    <state x="566" y="288" width="290" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576624241631">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="566" y="288" width="290" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1299.741@67.27.1299.741" timestamp="1576624241631" />
+    <state x="294" y="54" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1576607363454">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="294" y="54" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/67.27.1299.741@67.27.1299.741" timestamp="1576607363454" />
+    <state x="410" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1576615037480">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="410" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1576615037480" />
+    <state x="425" y="27" width="573" height="741" key="refactoring.ChangeSignatureDialog" timestamp="1576619288661">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="425" y="27" width="573" height="741" key="refactoring.ChangeSignatureDialog/67.27.1299.741@67.27.1299.741" timestamp="1576619288661" />
+    <state x="380" y="175" width="672" height="677" key="run.anything.popup" timestamp="1576615621761">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="380" y="175" width="672" height="677" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1576615621761" />
   </component>
 </project>

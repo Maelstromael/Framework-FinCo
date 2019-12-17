@@ -18,7 +18,7 @@ public class UserService implements IUserService {
     @Override
     public AbstractUser createUser(UserType type,String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts) {
         SimpleFactory simpleFactory = SimpleFactory.getInstance();
-        return userIDao.save(simpleFactory.creatUser(type, name, street, city, state, email, zip, accounts));
+        return userIDao.save(simpleFactory.createUser(type, name, street, city, state, email, zip, accounts));
     }
 
     @Override
