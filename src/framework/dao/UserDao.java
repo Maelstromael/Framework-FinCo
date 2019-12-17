@@ -7,14 +7,26 @@ import java.util.HashMap;
 
 public class UserDao implements IUserDao {
     private HashMap<String,AbstractUser> userList = new HashMap<>();
+    private int lastId = 1;
     @Override
-    public void save(AbstractUser user) {
-        if (user!=null)userList.put(user.getId(),user);
+    public AbstractUser save(AbstractUser user) {
+        if (user!=null){
+            if (user.getId()==null || user.getId().equals("")){
+                user.setId(++lastId+"");
+            }
+            userList.put(user.getId(),user);
+            return user;
+        }
+        return null;
     }
 
     @Override
-    public void delete(AbstractUser user) {
-        if (user!=null) userList.remove(user.getId());
+    public boolean delete(AbstractUser user) {
+        if (user!=null){
+            userList.remove(user.getId());
+            return true;
+        }
+        return false;
     }
 
     @Override

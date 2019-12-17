@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3767cf8-33d0-47be-979c-fe5b5f2a7874" name="Default Changelist" comment="" />
+    <list default="true" id="d3767cf8-33d0-47be-979c-fe5b5f2a7874" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/framework/controller/AbstractAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/framework/controller/AbstractUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/framework/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/framework/controller/IAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/framework/controller/IController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/framework/controller/IUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/framework/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/framework/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/AccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/dao/IAccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/IAccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/dao/IDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/IDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +36,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1V4wo0pw4SFOb5fRIBdkBmW8vPT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -45,11 +70,22 @@
       <option name="presentableId" value="Default" />
       <updated>1576525845725</updated>
       <workItem from="1576525851323" duration="15567000" />
-      <workItem from="1576548362913" duration="2477000" />
+      <workItem from="1576548362913" duration="9926000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

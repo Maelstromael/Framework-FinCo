@@ -15,11 +15,13 @@ public class Account extends AbstractAccount {
         super(accountNumber,0.0,user);
     }
 
-    public void deposit(double amount){
+    /*public boolean deposit(double amount){
         if (amount>0){
             this.currentBalance+=amount;
             Entry entry = new Entry(amount,LocalDate.now());
             this.addEntry(entry);
+            return true;
         }
-    }
+        return false;
+    }*/
 }
