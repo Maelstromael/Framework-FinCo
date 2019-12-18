@@ -13,6 +13,7 @@ public abstract class AbstractAccount implements IAccount{
     private String accNbr;
     protected double currentBalance = 0.0;
     protected AbstractUser user;
+    protected double interest = 1;
     //changes --
     private AccountTypes accTypes;
 
@@ -24,6 +25,13 @@ public abstract class AbstractAccount implements IAccount{
         this.user=user;
     }
 
+    public double getInterest() {
+        return interest;
+    }
+
+    public void addInterest(){
+        currentBalance = currentBalance*getInterest();
+    }
     public AbstractAccount(String accountNumber, AbstractUser user){
             this.accNbr=accountNumber;
             this.user=user;

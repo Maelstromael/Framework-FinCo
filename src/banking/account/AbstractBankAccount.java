@@ -17,8 +17,6 @@ public abstract class AbstractBankAccount extends AbstractAccount {
         super(accountNumber, user);
     }
 
-    public abstract void addInterest();
-
     @Override
     public boolean deposit(double amount) {
         boolean result = super.deposit(amount);

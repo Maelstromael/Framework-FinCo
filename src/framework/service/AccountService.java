@@ -49,6 +49,13 @@ public class AccountService implements IAccountService {
     }
 
     @Override
+    public void addInterest() {
+        for (AbstractAccount account: this.getAll()){
+            account.addInterest();
+        }
+    }
+
+    @Override
     public List<AbstractAccount> getAll() {
         return accountIDao.getAll();
     }

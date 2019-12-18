@@ -29,6 +29,11 @@ public class AccountController extends AbstractAccountController {
     }
 
     @Override
+    public void addInterest() {
+        accountService.addInterest();
+    }
+
+    @Override
     public List<AbstractAccount> getAllAccounts() {
         return accountService.getAll();
     }
