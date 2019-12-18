@@ -25,14 +25,9 @@ public class Company extends AbstractUser implements ICompany {
         if (this.accounts.contains(account))this.accounts.remove(account);
     }
 
-    @Override
-    public void sendEmail(String message) {
-        //TODO
-    }
 
     @Override
-    public String notify(String message, double amount, double balance, double bound) {
-        this.sendEmail(message);
-        return message;
+    public void sendEmail() {
+
     }
 }

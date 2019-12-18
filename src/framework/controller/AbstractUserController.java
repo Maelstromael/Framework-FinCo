@@ -3,7 +3,8 @@ package framework.controller;
 import framework.AccountTypes;
 import framework.UserType;
 import framework.account.AbstractAccount;
-import framework.factory.SimpleFactory;
+import framework.factory.AbstractUserFactory;
+import framework.service.IService;
 import framework.service.IUserService;
 import framework.user.AbstractUser;
 
@@ -22,5 +23,5 @@ public abstract class AbstractUserController implements IUserController {
 
     public abstract AbstractAccount addAccount(AbstractAccount account);
 
-    public abstract AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user, SimpleFactory factory);
+    public abstract AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user);
 }
