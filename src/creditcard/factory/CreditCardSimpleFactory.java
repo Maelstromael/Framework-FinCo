@@ -1,10 +1,7 @@
 package creditcard.factory;
 
-import banking.enumeration.BankAccountTypes;
-import banking.factory.BankSimpleFactory;
-import banking.factory.CheckingAccountFactory;
-import banking.factory.SavingsAccountFactory;
-import creditcard.enumeration.CreditCardTypes;
+import framework.AccountTypes;
+import framework.UserType;
 import framework.account.AbstractAccount;
 import framework.factory.AbstractAccountFactory;
 import framework.factory.SimpleFactory;
@@ -26,20 +23,19 @@ public class CreditCardSimpleFactory extends SimpleFactory {
     }
 
     @Override
-    public AbstractUser createUser(Enum userType, String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts) {
+    public AbstractUser createUser(UserType userType, String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts) {
         return super.createUser(userType, name, street, city, state, email, zip, accounts);
     }
 
-    @Override
-    public AbstractAccount createAccount(Enum accountTypes, String accountNumber, AbstractUser user) {
+    public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user) {
         AbstractAccountFactory accountFactory=null;
-        if (accountTypes== CreditCardTypes.GOLD){
+        if (accountTypes== AccountTypes.GOLD){
             accountFactory = new GoldAccountFactory();
             return accountFactory.createAccount(accountNumber,user);
-        }else if(accountTypes== CreditCardTypes.SILVER){
+        }else if(accountTypes== AccountTypes.SILVER){
             accountFactory = new SilverAccountFactory();
             return accountFactory.createAccount(accountNumber,user);
-        }else if(accountTypes== CreditCardTypes.BRONZE){
+        }else if(accountTypes== AccountTypes.BRONZE){
             accountFactory = new BronzeAccountFactory();
             return accountFactory.createAccount(accountNumber,user);
         }

@@ -22,7 +22,7 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public AbstractAccount createAccou  nt(AccountTypes accountTypes, String accountNumber, AbstractUser user) {
+    public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user) {
         System.err.println("UserService :: createAccount() Entered");
         SimpleFactory simpleFactory = SimpleFactory.getInstance();
         return accountIDao.save(simpleFactory.createAccount(accountTypes, accountNumber, user));
@@ -38,10 +38,10 @@ public class UserService implements IUserService {
         return accountIDao.save(account);
     }
 
-    @Override
+   /* @Override
     public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user) {
         System.err.println("UserService :: createAccount() Entered");
         SimpleFactory simpleFactory = SimpleFactory.getInstance();
         return accountIDao.save(simpleFactory.createAccount(accountTypes, accountNumber, user));
-    }
+    }*/
 }

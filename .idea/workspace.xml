@@ -2,24 +2,111 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51271c50-d439-4150-8148-1797cb6bd675" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/banking/account/AbstractBankAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/banking/account/CheckingsAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/banking/account/SavingsAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/banking/factory/BankSimpleFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/banking/factory/CheckingAccountFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/banking/factory/SavingsAccountFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/creditcard/account/AbstractCreditCardAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/creditcard/account/BronzeCreditCardAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/creditcard/account/GoldCreditCardAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/creditcard/account/SilverCreditCardAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/creditcard/factory/BronzeAccountFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/creditcard/factory/CreditCardSimpleFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/creditcard/factory/GoldAccountFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/creditcard/factory/SilverAccountFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/AccountTypes.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/UserType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/account/AbstractAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/account/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/account/IAccount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/controller/AbstractAccountController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/controller/AbstractUserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/controller/AccountController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/controller/IAccountController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/controller/IController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/controller/IUserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/dao/AccountDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/dao/Dao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/dao/IAccountDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/dao/IDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/dao/IUserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/dao/UserDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/entry/Entry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/entry/IEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/factory/AbstractAccountFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/factory/AbstractUserFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/factory/AccountFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/factory/CompanyFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/factory/IFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/factory/PersonFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/factory/SimpleFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/service/AccountService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/service/IAccountService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/service/IService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/service/IUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/user/AbstractUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/user/Company.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/user/ICompany.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/user/IPerson.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/user/IUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/project/framework/user/Person.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/META-INF/project.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/META-INF/project.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc$SymAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc$SymMouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc$SymMouse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddCompAcc$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddCompAcc$SymAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddCompAcc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddCompAcc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Deposit$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Deposit$SymAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Deposit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Deposit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw$SymAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banking/enumeration/BankAccountTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/creditcard/enumeration/CreditCardTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/creditcard/factory/CreditCardSimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creditcard/factory/CreditCardSimpleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/AccountTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/AccountTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="1V4wo0pw4SFOb5fRIBdkBmW8vPT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -57,9 +144,45 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d3767cf8-33d0-47be-979c-fe5b5f2a7874" name="Default Changelist" comment="" />
+      <created>1576525845725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576525845725</updated>
+      <workItem from="1576525851323" duration="15567000" />
+      <workItem from="1576548362913" duration="9926000" />
+    </task>
     <servers />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" />
+    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" />
+    <state x="566" y="288" width="290" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" />
+    <state x="566" y="288" width="290" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1299.741@67.27.1299.741" />
+    <state x="294" y="54" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" />
+    <state x="294" y="54" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/67.27.1299.741@67.27.1299.741" />
+    <state x="410" y="224" key="com.intellij.ide.util.TipDialog" />
+    <state x="410" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" />
+    <state x="425" y="27" width="573" height="741" key="refactoring.ChangeSignatureDialog" />
+    <state x="425" y="27" width="573" height="741" key="refactoring.ChangeSignatureDialog/67.27.1299.741@67.27.1299.741" />
+    <state x="380" y="175" width="672" height="677" key="run.anything.popup" />
+    <state x="380" y="175" width="672" height="677" key="run.anything.popup/67.27.1299.741@67.27.1299.741" />
   </component>
 </project>
