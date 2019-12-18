@@ -3,56 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b32c8b68-8775-4f9b-a26e-c20ac52670a5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/AccountTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/AccountTypes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/UserType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/UserType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/account/AbstractAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/account/AbstractAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/account/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/account/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/account/IAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/account/IAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/AbstractAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/controller/AbstractAccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/AbstractUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/controller/AbstractUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/controller/AccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/IAccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/controller/IAccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/IController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/controller/IController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/IUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/controller/IUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/AccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/dao/AccountDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/dao/Dao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/IAccountDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/dao/IAccountDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/IDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/dao/IDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/IUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/dao/IUserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/entry/Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/entry/Entry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/entry/IEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/entry/IEntry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc$SymAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc$SymMouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc$SymMouse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddAcc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddCompAcc$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddCompAcc$SymAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddCompAcc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_AddCompAcc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Deposit$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Deposit$SymAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Deposit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Deposit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw$SymAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/JDialog_Withdraw.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/service/AccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/IAccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/service/IAccountService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/IService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/service/IService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/service/IUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/AbstractUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/AbstractUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/Company.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/ICompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/ICompany.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/IPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/IPerson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/IUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/IUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/banking/enumeration/BankAccountTypes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creditcard/enumeration/CreditCardTypes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creditcard/factory/CreditCardSimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creditcard/factory/CreditCardSimpleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/AccountTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/AccountTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +34,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Finco" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="framework.gui.Finco" />
@@ -103,18 +70,6 @@
         <item itemvalue="Application.Finco" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -148,29 +103,17 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1576619343233">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1576619343233" />
-    <state x="566" y="288" width="290" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576624241631">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="566" y="288" width="290" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1299.741@67.27.1299.741" timestamp="1576624241631" />
-    <state x="294" y="54" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1576607363454">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="294" y="54" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/67.27.1299.741@67.27.1299.741" timestamp="1576607363454" />
-    <state x="410" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1576615037480">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="410" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1576615037480" />
-    <state x="425" y="27" width="573" height="741" key="refactoring.ChangeSignatureDialog" timestamp="1576619288661">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="425" y="27" width="573" height="741" key="refactoring.ChangeSignatureDialog/67.27.1299.741@67.27.1299.741" timestamp="1576619288661" />
-    <state x="380" y="175" width="672" height="677" key="run.anything.popup" timestamp="1576615621761">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="380" y="175" width="672" height="677" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1576615621761" />
+    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" />
+    <state x="524" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" />
+    <state x="566" y="288" width="290" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" />
+    <state x="566" y="288" width="290" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/67.27.1299.741@67.27.1299.741" />
+    <state x="294" y="54" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" />
+    <state x="294" y="54" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/67.27.1299.741@67.27.1299.741" />
+    <state x="410" y="224" key="com.intellij.ide.util.TipDialog" />
+    <state x="410" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" />
+    <state x="425" y="27" width="573" height="741" key="refactoring.ChangeSignatureDialog" />
+    <state x="425" y="27" width="573" height="741" key="refactoring.ChangeSignatureDialog/67.27.1299.741@67.27.1299.741" />
+    <state x="380" y="175" width="672" height="677" key="run.anything.popup" />
+    <state x="380" y="175" width="672" height="677" key="run.anything.popup/67.27.1299.741@67.27.1299.741" />
   </component>
 </project>
