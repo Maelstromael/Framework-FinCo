@@ -34,11 +34,10 @@ public abstract class AbstractAccount implements IAccount{
         return user;
     }
 
-    public boolean deposit(double amount){ //TODO: I encapsulated the "LocalDate.now()" inside a variable
+    public boolean deposit(double amount){
         if (amount>0){
             currentBalance+=amount;
-            LocalDate date = LocalDate.now();
-            Entry entry = new Entry(amount,date );
+            Entry entry = new Entry(amount, LocalDate.now());
             this.addEntry(entry);
             //TODO: update db balance of account
 
@@ -50,11 +49,10 @@ public abstract class AbstractAccount implements IAccount{
         }
     }
 
-    public boolean withdraw(double amount){ //TODO: I encapsulated the "LocalDate.now()" inside a variable
+    public boolean withdraw(double amount){
         if (amount<=currentBalance){
             currentBalance-=amount;
-            LocalDate date = LocalDate.now();
-            Entry entry = new Entry(-amount,date);
+            Entry entry = new Entry(-amount,LocalDate.now());
             this.addEntry(entry);
 
             //TODO: update db balance of account

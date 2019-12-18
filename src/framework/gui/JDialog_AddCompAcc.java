@@ -1,15 +1,5 @@
 package framework.gui;
-import framework.AccountTypes;
-import framework.UserType;
-import framework.Utils;
-import framework.account.AbstractAccount;
-import framework.controller.UserController;
-import framework.factory.SimpleFactory;
-import framework.service.UserService;
-import framework.user.AbstractUser;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.awt.*;
 import javax.swing.*;
 
 
@@ -34,18 +24,14 @@ public class JDialog_AddCompAcc extends javax.swing.JDialog
 		getContentPane().setLayout(null);
 		setSize(298,339);
 		setVisible(false);
-
-		choicePane.setBounds(25,5,100,70);
-		getContentPane().add(choicePane);
-
-		/*JRadioButton_Chk.setText("Checkings");
+		JRadioButton_Chk.setText("Checkings");
 		JRadioButton_Chk.setActionCommand("Checkings");
 		getContentPane().add(JRadioButton_Chk);
 		JRadioButton_Chk.setBounds(36,12,84,24);
 		JRadioButton_Sav.setText("Savings");
-		JRadioButton_Sav.setActionCommand("Savings");*/
-		//getContentPane().add(JRadioButton_Sav);
-		//JRadioButton_Sav.setBounds(36,36,84,24);
+		JRadioButton_Sav.setActionCommand("Savings");
+		getContentPane().add(JRadioButton_Sav);
+		JRadioButton_Sav.setBounds(36,36,84,24);
 		JLabel1.setText("Name");
 		getContentPane().add(JLabel1);
 		JLabel1.setForeground(java.awt.Color.black);
@@ -113,8 +99,8 @@ public class JDialog_AddCompAcc extends javax.swing.JDialog
 
 
 	//{{DECLARE_CONTROLS
-	protected JPanel choicePane = new JPanel();
-
+	javax.swing.JRadioButton JRadioButton_Chk = new javax.swing.JRadioButton();
+	javax.swing.JRadioButton JRadioButton_Sav = new javax.swing.JRadioButton();
 	javax.swing.JLabel JLabel1 = new javax.swing.JLabel();
 	javax.swing.JLabel JLabel2 = new javax.swing.JLabel();
 	javax.swing.JLabel JLabel3 = new javax.swing.JLabel();
@@ -122,17 +108,17 @@ public class JDialog_AddCompAcc extends javax.swing.JDialog
 	javax.swing.JLabel JLabel5 = new javax.swing.JLabel();
 	javax.swing.JLabel JLabel6 = new javax.swing.JLabel();
 	javax.swing.JLabel JLabel7 = new javax.swing.JLabel();
-	protected javax.swing.JTextField JTextField_NAME = new javax.swing.JTextField();
-	protected javax.swing.JTextField JTextField_CT = new javax.swing.JTextField();
-	protected javax.swing.JTextField JTextField_ST = new javax.swing.JTextField();
-	protected javax.swing.JTextField JTextField_STR = new javax.swing.JTextField();
-	protected javax.swing.JTextField JTextField_ZIP = new javax.swing.JTextField();
-	protected javax.swing.JTextField JTextField_NoOfEmp = new javax.swing.JTextField();
-	protected javax.swing.JTextField JTextField_EM = new javax.swing.JTextField();
-	protected javax.swing.JButton JButton_OK = new javax.swing.JButton();
-	protected javax.swing.JButton JButton_Calcel = new javax.swing.JButton();
-	protected javax.swing.JLabel JLabel8 = new javax.swing.JLabel();
-	protected javax.swing.JTextField JTextField_ACNR = new javax.swing.JTextField();
+	javax.swing.JTextField JTextField_NAME = new javax.swing.JTextField();
+	javax.swing.JTextField JTextField_CT = new javax.swing.JTextField();
+	javax.swing.JTextField JTextField_ST = new javax.swing.JTextField();
+	javax.swing.JTextField JTextField_STR = new javax.swing.JTextField();
+	javax.swing.JTextField JTextField_ZIP = new javax.swing.JTextField();
+	javax.swing.JTextField JTextField_NoOfEmp = new javax.swing.JTextField();
+	javax.swing.JTextField JTextField_EM = new javax.swing.JTextField();
+	javax.swing.JButton JButton_OK = new javax.swing.JButton();
+	javax.swing.JButton JButton_Calcel = new javax.swing.JButton();
+	javax.swing.JLabel JLabel8 = new javax.swing.JLabel();
+	javax.swing.JTextField JTextField_ACNR = new javax.swing.JTextField();
 	//}}
 
 
@@ -148,36 +134,20 @@ public class JDialog_AddCompAcc extends javax.swing.JDialog
 		}
 	}
 
-	protected void JButtonOK_actionPerformed(java.awt.event.ActionEvent event)
+	void JButtonOK_actionPerformed(java.awt.event.ActionEvent event)
 	{
-
-		JTextField[] fieldArr = {JTextField_ACNR,JTextField_NAME,JTextField_STR,JTextField_CT,JTextField_ZIP,JTextField_ST, JTextField_EM};
-		ArrayList<JTextField> listFields = new ArrayList<>();
-		listFields.addAll(Arrays.asList(fieldArr));
-		//check if required fields is not missing
-		if(Utils.requiredJTextFields(listFields)){
-			UserController uc = new UserController(new UserService());
-			AbstractUser user  = uc.createUser(UserType.COMPANY,JTextField_NAME.getText(), JTextField_STR.getText(), JTextField_CT.getText(), JTextField_ST.getText(), JTextField_EM.getText(), JTextField_ZIP.getText(), null);
-			if(user != null){
-				AbstractAccount acc = uc.createAccount(AccountTypes.BASIC,JTextField_ACNR.getText(),user, SimpleFactory.getInstance() );
-				if(acc != null) {
-					Utils.showJoptMessage(parentframe, "Account Creation Successful");
-					parentframe.newaccount=true;
-				} else {
-					Utils.showJoptMessage(parentframe, "Ooops.... Account Creation Failed");
-					return;
-				}
-			}
-			else {
-				Utils.showJoptMessage(parentframe, "Ooops.... User Creation Failed");
-			}
-
-		}
-		else {
-			Utils.showJoptMessage(parentframe, "Missing Field(s)!!!");
-			return;
-		}
-		dispose();
+       parentframe.accountnr=JTextField_ACNR.getText();
+       parentframe.clientName=JTextField_NAME.getText();
+       parentframe.street=JTextField_STR.getText();
+       parentframe.city=JTextField_CT.getText();
+       parentframe.zip=JTextField_ZIP.getText();
+       parentframe.state=JTextField_ST.getText();
+       if (JRadioButton_Chk.isSelected())
+           parentframe.accountType="Ch";
+           else
+           parentframe.accountType="S";
+	   parentframe.newaccount=true;
+	   dispose();
 			 
 	}
 

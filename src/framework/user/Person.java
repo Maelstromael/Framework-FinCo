@@ -27,17 +27,7 @@ public class Person extends AbstractUser implements IPerson {
     }
 
     @Override
-    public void sendEmail(String message) {
-        //TODO
-    }
+    public void sendEmail() {
 
-    @Override
-    public String notify(String message, double amount, double balance,double bound) {
-        if(amount >= bound || balance < 0){
-            this.sendEmail(message);
-            return message;
-        }
-
-        return "";
     }
 }

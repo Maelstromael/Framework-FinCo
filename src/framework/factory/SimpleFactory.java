@@ -10,7 +10,7 @@ import framework.user.IUser;
 import java.util.List;
 
 public class SimpleFactory {
-    protected SimpleFactory(){}
+    private SimpleFactory(){}
     private static SimpleFactory simpleFactory;
 
     public static SimpleFactory getInstance(){
@@ -20,7 +20,7 @@ public class SimpleFactory {
         return simpleFactory;
     }
 
-    public AbstractUser createUser(UserType userType, String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts){
+    public AbstractUser creatUser(UserType userType,String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts){
         AbstractUserFactory iFactory = null;
         if (userType==UserType.COMPANY){
             iFactory = new CompanyFactory();

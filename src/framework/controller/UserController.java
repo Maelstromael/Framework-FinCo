@@ -3,7 +3,7 @@ package framework.controller;
 import framework.AccountTypes;
 import framework.UserType;
 import framework.account.AbstractAccount;
-import framework.factory.SimpleFactory;
+import framework.service.IService;
 import framework.service.IUserService;
 import framework.user.AbstractUser;
 
@@ -30,8 +30,8 @@ public class UserController extends AbstractUserController {
     }
 
     @Override
-    public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user, SimpleFactory factory) {
+    public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user) {
         System.err.println("UserController :: createAccount() Entered");
-        return service.createAccount(accountTypes, accountNumber, user, factory );
+        return service.createAccount(accountTypes, accountNumber, user);
     }
 }
