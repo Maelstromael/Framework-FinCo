@@ -2,31 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b32c8b68-8775-4f9b-a26e-c20ac52670a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/banking/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/banking/gui/AddCompanyDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/banking/gui/AddPersonDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/banking/gui/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/framework/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/framework/gui/AccountTypesList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/banking/account/AbstractBankAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/banking/account/AbstractBankAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/creditcard/account/AbstractCreditCardAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/creditcard/account/AbstractCreditCardAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/banking/account/AbstractBankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/account/AbstractBankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/creditcard/account/AbstractCreditCardAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creditcard/account/AbstractCreditCardAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/controller/AbstractUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/controller/AbstractUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/dao/AccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/AccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/gui/Finco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/gui/Finco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/gui/JDialog_AddAcc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/gui/JDialog_AddAcc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/gui/JDialog_AddCompAcc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/gui/JDialog_AddCompAcc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/gui/JDialog_Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/gui/JDialog_Deposit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/Company.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/factory/AbstractAccountFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/factory/AbstractAccountFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/factory/AbstractUserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/factory/AbstractUserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/factory/IFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/user/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/user/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,26 +145,26 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="294" y="54" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/67.27.1299.741@67.27.1299.741" timestamp="1576607363454" />
-    <state width="1257" height="126" key="GridCell.Tab.0.bottom" timestamp="1576642676862">
+    <state width="1257" height="126" key="GridCell.Tab.0.bottom" timestamp="1576651666653">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1257" height="126" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576642676862" />
-    <state width="1257" height="126" key="GridCell.Tab.0.center" timestamp="1576642676861">
+    <state width="1257" height="126" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1576651666653" />
+    <state width="1257" height="126" key="GridCell.Tab.0.center" timestamp="1576651666652">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1257" height="126" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1576642676861" />
-    <state width="1257" height="126" key="GridCell.Tab.0.left" timestamp="1576642676861">
+    <state width="1257" height="126" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1576651666652" />
+    <state width="1257" height="126" key="GridCell.Tab.0.left" timestamp="1576651666652">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1257" height="126" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1576642676861" />
-    <state width="1257" height="126" key="GridCell.Tab.0.right" timestamp="1576642676862">
+    <state width="1257" height="126" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1576651666652" />
+    <state width="1257" height="126" key="GridCell.Tab.0.right" timestamp="1576651666653">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1257" height="126" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1576642676862" />
-    <state x="410" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1576632438895">
+    <state width="1257" height="126" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1576651666653" />
+    <state x="410" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1576686463236">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="410" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1576632438895" />
+    <state x="410" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1576686463236" />
     <state x="425" y="27" width="573" height="741" key="refactoring.ChangeSignatureDialog" timestamp="1576637132982">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

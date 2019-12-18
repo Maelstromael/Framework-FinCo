@@ -1,5 +1,6 @@
 package framework.user;
 
+import framework.Utils;
 import framework.account.AbstractAccount;
 
 import java.time.LocalDate;
@@ -29,6 +30,8 @@ public class Person extends AbstractUser implements IPerson {
     @Override
     public void sendEmail(String message) {
         //TODO
+        Utils.showJoptMessage(null, "email sent to " + this.getName() + " : " + message);
+        System.err.println("email sent to " + this.getName() + " : " + message);
     }
 
     @Override
