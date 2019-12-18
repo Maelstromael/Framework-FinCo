@@ -1,5 +1,7 @@
 package creditcard.gui;
 
+import creditcard.account.AbstractCreditCardAccount;
+import creditcard.service.CreditAccountService;
 import framework.account.AbstractAccount;
 import framework.controller.AccountController;
 import framework.gui.*;
@@ -151,7 +153,7 @@ public class Ccard extends Finco {
     protected void refreshTable() {
         if(model != null) {
             model.setRowCount(0);
-            AccountController auc = new AccountController(new AccountService());
+            AccountController auc = new AccountController(new CreditAccountService());
             List<AbstractAccount> accounts = auc.getAllAccounts();
             System.err.println(accounts.toString());
             for (AbstractAccount acc : accounts) {
@@ -161,7 +163,7 @@ public class Ccard extends Finco {
 
                         rowdata[0] = acc.getUser().getName();
                         rowdata[1] = acc.getAccountNbr();
-                        rowdata[2] = acc.getUser().getState();//TODO: exp date
+                        //rowdata[2] = acc.;//TODO: exp date
                         rowdata[3] = acc.getAccTypes();
                         rowdata[4] = acc.getCurrentBalance();
                         model.addRow(rowdata);

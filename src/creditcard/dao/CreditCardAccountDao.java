@@ -21,6 +21,28 @@ public class CreditCardAccountDao extends AccountDao {
         return accountDao;
     }
 
+
+    public AbstractAccount save(AbstractCreditCardAccount account) {
+        System.err.println("AccountIdao :: save() Entered");
+        if (account!=null){
+            System.err.println("AccountIdao :: save() Entered: "+account.toString());
+            //changes --
+            String name = account.getAccountNbr();
+            String accN;
+            String expDate;
+            if(name.contains("@@")){
+
+            }
+            if(accountList.containsKey(name)) {
+                accountList.replace(name, account);
+            }else {
+                accountList.put(name, account);
+            }
+            return account;
+        }
+        return null;
+    }
+
     public HashMap<String, List<IEntry>> generateAccountStatements(){
         HashMap<String,List<IEntry>> statements = new HashMap<>();
         List<AbstractCreditCardAccount> accounts = getAllAccounts();
