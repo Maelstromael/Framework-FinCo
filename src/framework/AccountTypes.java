@@ -1,5 +1,5 @@
 package framework;
 
 public enum AccountTypes {
-    BASIC
+    BASIC,SAVINGS,CHECKINGS,GOLD,SILVER,BRONZE
 }

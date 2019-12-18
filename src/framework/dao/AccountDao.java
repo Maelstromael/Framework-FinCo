@@ -19,7 +19,12 @@ public class AccountDao implements IAccountDao {
         if (account!=null){
             System.err.println("AccountIdao :: save() Entered: "+account.toString());
             //changes --
-            accountList.put(account.getAccountNbr(),account);
+            String name = account.getAccountNbr();
+            if(accountList.containsKey(name)) {
+                accountList.replace(name, account);
+            }else {
+                accountList.put(name, account);
+            }
             return account;
         }
         return null;
@@ -84,12 +89,14 @@ public class AccountDao implements IAccountDao {
 
     @Override
     public List<AbstractAccount> getAll() {
+        System.err.println("AccountDao :: getAll() Entered");
         List<AbstractAccount> accounts = new ArrayList<>();
         Iterator<Map.Entry<String, AbstractAccount>> iterator = accountList.entrySet().iterator();
         while (iterator.hasNext()) {
             AbstractAccount account = iterator.next().getValue();
             accounts.add(account);
         }
+        System.err.println("AccountDao :: getAll() exited : " + accounts.size());
         return accounts;
     }
 
