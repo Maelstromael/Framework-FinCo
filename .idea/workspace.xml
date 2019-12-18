@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b32c8b68-8775-4f9b-a26e-c20ac52670a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/banking/AccountTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/AccountTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/AccountTypes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/UserType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/UserType.class" afterDir="false" />
@@ -25,13 +24,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/dao/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/entry/Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/entry/Entry.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/entry/IEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/entry/IEntry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/AbstractAccountFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/factory/AbstractAccountFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/AbstractUserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/factory/AbstractUserFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/AccountFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/factory/AccountFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/CompanyFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/factory/CompanyFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/IFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/factory/IFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/PersonFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/factory/PersonFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/SimpleFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/factory/SimpleFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco$SymWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/gui/Finco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/gui/Finco.class" afterDir="false" />
@@ -55,10 +47,12 @@
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/IPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/IPerson.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/IUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/IUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/framework/user/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/banking/enumeration/BankAccountTypes.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/creditcard/enumeration/CreditCardTypes.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/creditcard/factory/CreditCardSimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/creditcard/factory/CreditCardSimpleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/framework/AccountTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/AccountTypes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/gui/Finco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/gui/Finco.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +63,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,18 +83,6 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Finco" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -121,6 +103,18 @@
         <item itemvalue="Application.Finco" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />

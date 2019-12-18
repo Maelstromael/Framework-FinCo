@@ -1,7 +1,6 @@
 package banking.factory;
 
-import banking.AccountTypes;
-import banking.enumeration.BankAccountTypes;
+import framework.AccountTypes;
 import framework.UserType;
 import framework.account.AbstractAccount;
 import framework.factory.AbstractAccountFactory;
@@ -27,12 +26,6 @@ public class BankSimpleFactory extends SimpleFactory {
     public AbstractUser createUser(UserType userType, String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts) {
         return super.createUser(userType, name, street, city, state, email, zip, accounts);
     }
-
-    @Override
-    public AbstractAccount createAccount(framework.AccountTypes accountTypes, String accountNumber, AbstractUser user) {
-        return super.createAccount(accountTypes, accountNumber, user);
-    }
-
 
     public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user) {
         AbstractAccountFactory accountFactory=null;
