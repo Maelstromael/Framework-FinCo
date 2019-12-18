@@ -64,10 +64,10 @@ public class Finco extends javax.swing.JFrame {
 		JButton_PerAC.setText("Add Account");
 		JPanel1.add(JButton_PerAC);
 		JButton_PerAC.setBounds(24, 20, 192, 33);
-//		JButton_CompAC.setText("Add company account");
-//		JButton_CompAC.setActionCommand("jbutton");
-//		JPanel1.add(JButton_CompAC);
-//		JButton_CompAC.setBounds(240,20,192,33);
+		JButton_CompAC.setText("Add company account");
+		JButton_CompAC.setActionCommand("jbutton");
+		JPanel1.add(JButton_CompAC);
+  		JButton_CompAC.setBounds(240,20,192,33);
 		JButton_Deposit.setText("Deposit");
 		JPanel1.add(JButton_Deposit);
 		JButton_Deposit.setBounds(468, 104, 96, 33);
