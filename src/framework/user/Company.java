@@ -1,5 +1,6 @@
 package framework.user;
 
+import framework.Utils;
 import framework.account.AbstractAccount;
 
 import java.util.List;
@@ -28,6 +29,7 @@ public class Company extends AbstractUser implements ICompany {
     @Override
     public void sendEmail(String message) {
         //TODO
+        Utils.showJoptMessage(null, "email sent to " + this.getName() + " : " + message);
     }
 
     @Override

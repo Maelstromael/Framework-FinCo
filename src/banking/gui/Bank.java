@@ -148,9 +148,19 @@ public class Bank extends Finco {
 
             refreshTable();
         }
-
-
     }
+
+    @Override
+    protected void JButtonAddinterest_actionPerformed(java.awt.event.ActionEvent event) {
+        int res = JOptionPane.showConfirmDialog(JButton_Addinterest, "Add interest to all accounts", "Add interest to all accounts", JOptionPane.WARNING_MESSAGE, JOptionPane.YES_NO_OPTION);
+        if(res == JOptionPane.YES_OPTION){
+            AccountController actr = new AccountController(new AccountService());
+            actr.addInterest();
+
+            refreshTable();
+        }
+    }
+
 
     protected void refreshTable() {
         if(model != null) {

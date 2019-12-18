@@ -1,6 +1,8 @@
 package creditcard.gui;
 
 import banking.factory.BankSimpleFactory;
+import com.sun.xml.internal.stream.buffer.AbstractCreator;
+import creditcard.account.AbstractCreditCardAccount;
 import creditcard.factory.CreditCardSimpleFactory;
 import framework.AccountTypes;
 import framework.UserType;
@@ -30,23 +32,51 @@ public class AddCreditCardDialog extends JDialog_AddAcc {
         JRadioButton_Gold.setText("GOLD");
         JRadioButton_Gold.setSelected(true);
         JRadioButton_Gold.setActionCommand("GOLD");
-        radioBox.add(JRadioButton_Gold);
+        super.choicePane.add(JRadioButton_Gold);
         //JRadioButton_Sil.setBounds(36,12,84,24);
         JRadioButton_Sil.setText("SILVER");
         JRadioButton_Sil.setActionCommand("SILVER");
-        radioBox.add(JRadioButton_Sil);
+        super.choicePane.add(JRadioButton_Sil);
         //JRadioButton_Sil.setBounds(36,36,84,24);
         JRadioButton_Bron.setText("BRONZE");
         JRadioButton_Bron.setActionCommand("BRONZE");
-        radioBox.add(JRadioButton_Bron);
+        super.choicePane.add(JRadioButton_Bron);
 
         typeChoiceGroup.add(JRadioButton_Gold);
         typeChoiceGroup.add(JRadioButton_Sil);
         typeChoiceGroup.add(JRadioButton_Bron);
 
-        super.choicePane.add(radioBox);
+        JTextField_ACNR.setVisible(false);
+        JLabel8.setVisible(false);
 
-        choicePane.setBounds(5,5,300,30);
+        JTextField_BD.setVisible(false);
+        JLabel6.setVisible(false);
+
+        JLabel7.setBounds(12,204,96,24);
+        JTextField_EM.setBounds(84,204,156,20);
+
+        super.choicePane.setBounds(5,5,100,90);
+
+        JLabel10.setText("CC Number");
+        JLabel10.setBounds(12,228,96,24);
+        JLabel10.setForeground(java.awt.Color.black);
+        super.getContentPane().add(JLabel10);
+
+        JLabel11.setText("Exp Date");
+        JLabel11.setBounds(12,252,96,24);
+        JLabel11.setForeground(java.awt.Color.black);
+        super.getContentPane().add(JLabel11);
+
+        JTextField_CC.setBounds(84,228,156,20);
+        super.getContentPane().add(JTextField_CC);
+
+        JTextField_EXP.setBounds(84,252,156,20);
+        super.getContentPane().add(JTextField_EXP);
+
+        JButton_OK.setBounds(48,284,84,24);
+        JButton_Cancel.setBounds(156,284,84,24);
+
+        super.getContentPane().setSize(290,450);
         super.getContentPane().repaint();
     }
 
@@ -56,11 +86,16 @@ public class AddCreditCardDialog extends JDialog_AddAcc {
     JRadioButton JRadioButton_Sil = new JRadioButton();
     JRadioButton JRadioButton_Bron = new JRadioButton();
 
+    protected JLabel JLabel10 = new javax.swing.JLabel();
+    protected JLabel JLabel11 = new javax.swing.JLabel();
+    protected JTextField JTextField_CC = new javax.swing.JTextField();
+    protected JTextField JTextField_EXP = new javax.swing.JTextField();
+
     @Override
     protected void JButtonOK_actionPerformed(java.awt.event.ActionEvent event)
     {
 
-        JTextField[] fieldArr = {JTextField_BD,JTextField_ACNR,JTextField_NAME,JTextField_STR,JTextField_CT,JTextField_ZIP,JTextField_ST, JTextField_EM};
+        JTextField[] fieldArr = {JTextField_EXP,JTextField_CC,JTextField_NAME,JTextField_STR,JTextField_CT,JTextField_ZIP,JTextField_ST, JTextField_EM};
         ArrayList<JTextField> listFields = new ArrayList<>();
         listFields.addAll(Arrays.asList(fieldArr));
         //check if required fields is not missing
@@ -78,7 +113,7 @@ public class AddCreditCardDialog extends JDialog_AddAcc {
                 else {
                     accountType= AccountTypes.BRONZE;
                 }
-                AbstractAccount acc = uc.createAccount(accountType,JTextField_ACNR.getText(),user, CreditCardSimpleFactory.getInstance());
+                AbstractAccount acc = uc.createAccount(accountType,JTextField_CC.getText(),user, CreditCardSimpleFactory.getInstance());
                 if(acc != null) {
                     Utils.showJoptMessage(parentframe, "Account Creation Successful");
                     parentframe.newaccount=true;

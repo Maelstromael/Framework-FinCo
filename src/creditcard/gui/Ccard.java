@@ -156,17 +156,16 @@ public class Ccard extends Finco {
             System.err.println(accounts.toString());
             for (AbstractAccount acc : accounts) {
                 if (acc != null) {
-                    rowdata[0] = acc.getAccountNbr();
-                    if (acc.getUser() != null) {
-                        rowdata[1] = acc.getUser().getName();
-                        rowdata[2] = acc.getUser().getCity();
-                        rowdata[3] = acc.getUser().getState();
-                        rowdata[4] = acc.getUser().getZip();
-                        rowdata[5] = acc.getUser().getUserType();
-                        rowdata[6] = acc.getAccTypes();
-                        rowdata[7] = acc.getCurrentBalance();
+
+                    //if (acc.getUser() != null) {
+
+                        rowdata[0] = acc.getUser().getName();
+                        rowdata[1] = acc.getAccountNbr();
+                        rowdata[2] = acc.getUser().getState();//TODO: exp date
+                        rowdata[3] = acc.getAccTypes();
+                        rowdata[4] = acc.getCurrentBalance();
                         model.addRow(rowdata);
-                    }
+                  //  }
                 }
                 JTable1.getSelectionModel().setAnchorSelectionIndex(-1);
             }

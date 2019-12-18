@@ -120,15 +120,15 @@ public class JDialog_AddAcc extends javax.swing.JDialog
 
 
 	//{{DECLARE_CONTROLS
-	javax.swing.JRadioButton JRadioButton_Chk = new javax.swing.JRadioButton();
-	javax.swing.JRadioButton JRadioButton_Sav = new javax.swing.JRadioButton();
-	javax.swing.JLabel JLabel1 = new javax.swing.JLabel();
-	javax.swing.JLabel JLabel2 = new javax.swing.JLabel();
-	javax.swing.JLabel JLabel3 = new javax.swing.JLabel();
-	javax.swing.JLabel JLabel4 = new javax.swing.JLabel();
-	javax.swing.JLabel JLabel5 = new javax.swing.JLabel();
-	javax.swing.JLabel JLabel6 = new javax.swing.JLabel();
-	javax.swing.JLabel JLabel7 = new javax.swing.JLabel();
+	protected javax.swing.JRadioButton JRadioButton_Chk = new javax.swing.JRadioButton();
+	protected javax.swing.JRadioButton JRadioButton_Sav = new javax.swing.JRadioButton();
+	protected javax.swing.JLabel JLabel1 = new javax.swing.JLabel();
+	protected javax.swing.JLabel JLabel2 = new javax.swing.JLabel();
+	protected javax.swing.JLabel JLabel3 = new javax.swing.JLabel();
+	protected javax.swing.JLabel JLabel4 = new javax.swing.JLabel();
+	protected javax.swing.JLabel JLabel5 = new javax.swing.JLabel();
+	protected javax.swing.JLabel JLabel6 = new javax.swing.JLabel();
+	protected javax.swing.JLabel JLabel7 = new javax.swing.JLabel();
 	protected javax.swing.JTextField JTextField_NAME = new javax.swing.JTextField();
 	protected javax.swing.JTextField JTextField_CT = new javax.swing.JTextField();
 	protected javax.swing.JTextField JTextField_ST = new javax.swing.JTextField();
@@ -136,10 +136,10 @@ public class JDialog_AddAcc extends javax.swing.JDialog
 	protected javax.swing.JTextField JTextField_ZIP = new javax.swing.JTextField();
 	protected javax.swing.JTextField JTextField_BD = new javax.swing.JTextField();
 	protected javax.swing.JTextField JTextField_EM = new javax.swing.JTextField();
-	javax.swing.JButton JButton_OK = new javax.swing.JButton();
-	javax.swing.JButton JButton_Cancel = new javax.swing.JButton();
+	protected javax.swing.JButton JButton_OK = new javax.swing.JButton();
+	protected javax.swing.JButton JButton_Cancel = new javax.swing.JButton();
 	protected javax.swing.JTextField JTextField_ACNR = new javax.swing.JTextField();
-	javax.swing.JLabel JLabel8 = new javax.swing.JLabel();
+	protected javax.swing.JLabel JLabel8 = new javax.swing.JLabel();
 	//}}
 
 

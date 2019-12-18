@@ -64,6 +64,14 @@ public class AccountService implements IAccountService {
         System.err.println("AccountService :: getAll() Entered");
         return accountIDao.getAll();
     }
+    @Override
+    public void addInterest() {
+        System.err.println("AccountService :: addInterest() ");
+        for (AbstractAccount account: this.getAll()){
+            account.addInterest();
+            accountIDao.save(account);
+        }
+    }
 
     public List<IEntry> generateStatement(String name){
         return accountIDao.getByName(name).getEntries();

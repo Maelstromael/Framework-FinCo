@@ -1,45 +1,29 @@
-package framework.dao;
+package creditcard.dao;
 
-import framework.AccountTypes;
+import creditcard.account.AbstractCreditCardAccount;
 import framework.account.AbstractAccount;
+import framework.dao.AccountDao;
 import framework.entry.IEntry;
 
-import javax.swing.*;
 import java.util.*;
 
-public class AccountDao implements IAccountDao {
-    private HashMap<String,AbstractAccount> accountList = new HashMap<>();
-    private static AccountDao accountDao=null;
-
-    protected AccountDao(){}
-
-    @Override
-    public AbstractAccount save(AbstractAccount account) {
-        System.err.println("AccountIdao :: save() Entered");
-        if (account!=null){
-            System.err.println("AccountIdao :: save() Entered: "+account.toString());
-            //changes --
-            String name = account.getAccountNbr();
-            if(accountList.containsKey(name)) {
-                accountList.replace(name, account);
-            }else {
-                accountList.put(name, account);
-            }
-            return account;
-        }
-        return null;
+public class CreditCardAccountDao extends AccountDao {
+    private HashMap<String, AbstractCreditCardAccount> accountList = new HashMap<>();
+    private static CreditCardAccountDao accountDao=null;
+    private CreditCardAccountDao(){
+        super();
     }
 
-    public static AccountDao getAccountDao() {
+    public static CreditCardAccountDao getAccountDao() {
         if (accountDao==null){
-            accountDao=new AccountDao();
+            accountDao=new CreditCardAccountDao();
         }
         return accountDao;
     }
 
     public HashMap<String, List<IEntry>> generateAccountStatements(){
         HashMap<String,List<IEntry>> statements = new HashMap<>();
-        List<AbstractAccount> accounts = getAllAccounts();
+        List<AbstractCreditCardAccount> accounts = getAllAccounts();
         for (AbstractAccount account: accounts){
             statements.put(account.getUser().getName(), account.getEntries());
         }
@@ -47,11 +31,11 @@ public class AccountDao implements IAccountDao {
     }
 
     //changes - private to public
-    private List<AbstractAccount> getAllAccounts(){
-        List<AbstractAccount> accounts = new ArrayList<>();
-        Iterator<Map.Entry<String, AbstractAccount>> iterator = accountList.entrySet().iterator();
+    private List<AbstractCreditCardAccount> getAllAccounts(){
+        List<AbstractCreditCardAccount> accounts = new ArrayList<>();
+        Iterator<Map.Entry<String, AbstractCreditCardAccount>> iterator = accountList.entrySet().iterator();
         while (iterator.hasNext()) {
-            AbstractAccount account = iterator.next().getValue();
+            AbstractCreditCardAccount account = iterator.next().getValue();
             accounts.add(account);
         }
         return accounts;
@@ -68,17 +52,17 @@ public class AccountDao implements IAccountDao {
 
 
     @Override
-    public AbstractAccount get(String id) {
+    public AbstractCreditCardAccount get(String id) {
         System.err.println("AccountIDao :: get() Entered name: "+id);
         return accountList.get(id);
     }
 
     @Override
-    public AbstractAccount getByName(String name) {
+    public AbstractCreditCardAccount getByName(String name) {
         System.err.println("AccountIDao :: getbyName() Entered name: "+name);
-        Iterator<Map.Entry<String, AbstractAccount>> iterator = accountList.entrySet().iterator();
+        Iterator<Map.Entry<String, AbstractCreditCardAccount>> iterator = accountList.entrySet().iterator();
         while (iterator.hasNext()){
-            AbstractAccount account = iterator.next().getValue();
+            AbstractCreditCardAccount account = iterator.next().getValue();
             System.err.println(account.toString());
             if (name.equals(account.getUser().getName())){
                 return account;
@@ -91,7 +75,7 @@ public class AccountDao implements IAccountDao {
     public List<AbstractAccount> getAll() {
         System.err.println("AccountDao :: getAll() Entered");
         List<AbstractAccount> accounts = new ArrayList<>();
-        Iterator<Map.Entry<String, AbstractAccount>> iterator = accountList.entrySet().iterator();
+        Iterator<Map.Entry<String, AbstractCreditCardAccount>> iterator = accountList.entrySet().iterator();
         while (iterator.hasNext()) {
             AbstractAccount account = iterator.next().getValue();
             accounts.add(account);
@@ -99,6 +83,5 @@ public class AccountDao implements IAccountDao {
         System.err.println("AccountDao :: getAll() exited : " + accounts.size());
         return accounts;
     }
-
 
 }

@@ -284,7 +284,7 @@ public class Finco extends javax.swing.JFrame {
 
 	}
 
-	void JButtonAddinterest_actionPerformed(java.awt.event.ActionEvent event) {
+	protected void JButtonAddinterest_actionPerformed(java.awt.event.ActionEvent event) {
 		JOptionPane.showMessageDialog(JButton_Addinterest, "Add interest to all accounts", "Add interest to all accounts", JOptionPane.WARNING_MESSAGE);
 
 	}
