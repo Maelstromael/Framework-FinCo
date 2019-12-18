@@ -16,8 +16,14 @@ public class AccountService implements IAccountService {
         if (name!=null){
             AbstractAccount account = accountIDao.get(name);
             System.err.println("AccountService :: withdraw() Entered: accountIDao.get(name) ");
-            if (account!=null)
-            return account.deposit(amount);
+            if (account!=null){
+                boolean res = account.deposit(amount);
+                if(res){
+                    accountIDao.save(account);
+                    return res;
+                }
+            }
+
         }
        return false;
     }
@@ -29,7 +35,12 @@ public class AccountService implements IAccountService {
             AbstractAccount account = accountIDao.get(name);
             if (account!=null) {
                 System.err.println("AccountService :: withdraw() Entered: accountIDao.get(name) ");
-                return account.withdraw(amount);
+                boolean res = account.withdraw(amount);
+                if(res){
+                    accountIDao.save(account);
+                    return res;
+                }
+
             }
         }
         return false;
@@ -50,6 +61,7 @@ public class AccountService implements IAccountService {
 
     @Override
     public List<AbstractAccount> getAll() {
+        System.err.println("AccountService :: getAll() Entered");
         return accountIDao.getAll();
     }
 

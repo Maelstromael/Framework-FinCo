@@ -91,6 +91,7 @@ public class JDialog_Deposit extends javax.swing.JDialog
 		if(JTextField_Deposit.getText()!=null && !JTextField_Deposit.getText().equals("") && Utils.isNumeric(JTextField_Deposit.getText())) {
 			boolean res = auc.deposit(JTextField_NAME.getText(), Double.parseDouble(JTextField_Deposit.getText()));
 			if(res){
+
 				Utils.showJoptMessage(parentframe, "Deposit of "+JTextField_Deposit.getText()+" Successful");
 				parentframe.amountDeposit=JTextField_Deposit.getText();
 			}
