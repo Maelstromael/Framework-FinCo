@@ -33,7 +33,7 @@ public abstract class AbstractBankAccount extends AbstractAccount {
         return result;
     }
 
-    public String notifyCustomer(double amount, String type){
+    private String notifyCustomer(double amount, String type){
         //TODO
         String message = "Transaction of " + LocalDate.now() + " : " + type
                 + System.lineSeparator() + "Amount : $" + amount;

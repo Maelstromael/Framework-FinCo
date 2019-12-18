@@ -31,10 +31,14 @@ public class BankSimpleFactory extends SimpleFactory {
         AbstractAccountFactory accountFactory=null;
         if (accountTypes== AccountTypes.SAVINGS){
             accountFactory = new SavingsAccountFactory();
-            return accountFactory.createAccount(accountNumber,user);
+            AbstractAccount newAcc =  accountFactory.createAccount(accountNumber,user);
+            newAcc.setAccTypes(accountTypes);
+            return newAcc;
         }else if(accountTypes== AccountTypes.CHECKINGS){
             accountFactory = new CheckingAccountFactory();
-            return accountFactory.createAccount(accountNumber,user);
+            AbstractAccount newAcc =  accountFactory.createAccount(accountNumber,user);
+            newAcc.setAccTypes(accountTypes);
+            return newAcc;
         }
         return null;
     }
