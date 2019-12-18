@@ -2,78 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51271c50-d439-4150-8148-1797cb6bd675" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/banking/account/AbstractBankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/banking/account/CheckingsAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/banking/account/SavingsAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/banking/enumeration/BankAccountTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/banking/factory/BankSimpleFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/banking/factory/CheckingAccountFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/banking/factory/SavingsAccountFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creditcard/account/AbstractCreditCardAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creditcard/account/BronzeCreditCardAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creditcard/account/GoldCreditCardAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creditcard/account/SilverCreditCardAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creditcard/enumeration/CreditCardTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creditcard/factory/BronzeAccountFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creditcard/factory/CreditCardSimpleFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creditcard/factory/GoldAccountFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/creditcard/factory/SilverAccountFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/AccountTypes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/UserType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/account/AbstractAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/account/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/account/IAccount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/AbstractAccountController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/AbstractUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/AccountController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/IAccountController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/IController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/IUserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/AccountDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/Dao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/IAccountDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/IDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/IUserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/entry/Entry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/entry/IEntry.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/AbstractAccountFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/AbstractUserFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/AccountFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/CompanyFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/IFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/PersonFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/factory/SimpleFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/AccountService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/IAccountService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/IService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/IUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/AbstractUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/Company.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/ICompany.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/IPerson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/IUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/framework/user/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/account/AbstractAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/factory/SimpleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/AbstractUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/user/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/framework/user/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/framework/user/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
