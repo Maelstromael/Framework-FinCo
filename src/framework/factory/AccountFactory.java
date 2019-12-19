@@ -7,7 +7,7 @@ import framework.user.AbstractUser;
 
 public class AccountFactory {
 
-    private AccountFactory(){}
+    protected AccountFactory(){}
     private static AccountFactory accountFactory;
 
     public static AccountFactory getInstance(){

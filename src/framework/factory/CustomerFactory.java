@@ -10,7 +10,7 @@ import java.util.List;
 
 public class CustomerFactory {
 
-    private CustomerFactory(){}
+    protected CustomerFactory(){}
     private static CustomerFactory customerFactory;
 
     public static CustomerFactory getInstance(){
