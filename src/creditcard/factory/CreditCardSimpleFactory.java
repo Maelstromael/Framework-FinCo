@@ -14,11 +14,13 @@ public class CreditCardSimpleFactory extends SimpleFactory {
     private static CreditCardSimpleFactory creditCardSimpleFactory;
 
     private CreditCardSimpleFactory(){}
+   // private static String expDate;
 
-    public static CreditCardSimpleFactory getInstance(){
+    public static CreditCardSimpleFactory getInstance(String expDate){
         if(creditCardSimpleFactory == null){
             creditCardSimpleFactory = new CreditCardSimpleFactory();
         }
+
         return creditCardSimpleFactory;
     }
 
@@ -31,7 +33,9 @@ public class CreditCardSimpleFactory extends SimpleFactory {
         AbstractAccountFactory accountFactory=null;
         if (accountTypes== AccountTypes.GOLD){
             accountFactory = new GoldAccountFactory();
-            return accountFactory.createAccount(accountNumber,user);
+            AbstractAccount goldAcc = accountFactory.createAccount(accountNumber,user);
+
+            return goldAcc;
         }else if(accountTypes== AccountTypes.SILVER){
             accountFactory = new SilverAccountFactory();
             return accountFactory.createAccount(accountNumber,user);

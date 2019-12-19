@@ -16,5 +16,6 @@ public abstract class AbstractAccountController implements IAccountController{
     public abstract boolean deposit(String name, double amount);
     public abstract boolean withdraw(String name, double amount);
     public abstract double getBalance(String name);
+    public abstract void addInterest();
     public abstract List<AbstractAccount> getAllAccounts();
 }

@@ -17,6 +17,8 @@ public abstract class AbstractCreditCardAccount extends AbstractAccount {
 
     public AbstractCreditCardAccount(String accountNumber, AbstractUser user) {
         super(accountNumber, user);
+        //this.expDate = LocalDate.parse(expDate);
+        this.expDate = LocalDate.now().plusYears(3);
     }
 
     public LocalDate getExpDate() {
@@ -81,7 +83,7 @@ public abstract class AbstractCreditCardAccount extends AbstractAccount {
         return result;
     }
 
-    public String notifyCustomer(double amount, String type){
+    private String notifyCustomer(double amount, String type){
         //TODO
         String message = "Transaction of " + LocalDate.now() + " : " + type
                 + System.lineSeparator() + "Amount : $" + amount;

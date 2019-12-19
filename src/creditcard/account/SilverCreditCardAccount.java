@@ -12,7 +12,7 @@ public class SilverCreditCardAccount extends AbstractCreditCardAccount {
     }
 
     public SilverCreditCardAccount(String accountNumber, AbstractUser user) {
-        super(accountNumber, user);
+        super(accountNumber,0.0, user);
     }
 
     @Override

@@ -15,6 +15,7 @@ public abstract class AbstractAccount implements IAccount{
     protected AbstractUser user;
     //changes --
     private AccountTypes accTypes;
+    protected double interest = 1;
 
     private List<IEntry> entries = new ArrayList<>();
 
@@ -103,5 +104,12 @@ public abstract class AbstractAccount implements IAccount{
 
     public void setAccTypes(AccountTypes accTypes) {
         this.accTypes = accTypes;
+    }
+
+    public double getInterest() {
+        return interest;
+    }
+    public void addInterest(){
+        currentBalance = currentBalance*getInterest();
     }
 }

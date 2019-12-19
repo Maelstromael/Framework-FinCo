@@ -20,9 +20,9 @@ public class Finco extends javax.swing.JFrame {
 	 ****/
 	String accountnr, clientName, street, city, zip, state, accountType, clientType, amountDeposit;
 	boolean newaccount;
-	private DefaultTableModel model;
-	private JTable JTable1;
-	private JScrollPane JScrollPane1;
+	protected DefaultTableModel model;
+	protected JTable JTable1;
+	protected JScrollPane JScrollPane1;
 	Finco myframe;
 	private Object rowdata[];
 
@@ -64,10 +64,10 @@ public class Finco extends javax.swing.JFrame {
 		JButton_PerAC.setText("Add Account");
 		JPanel1.add(JButton_PerAC);
 		JButton_PerAC.setBounds(24, 20, 192, 33);
-		JButton_CompAC.setText("Add company account");
-		JButton_CompAC.setActionCommand("jbutton");
-		JPanel1.add(JButton_CompAC);
-  		JButton_CompAC.setBounds(240,20,192,33);
+//		JButton_CompAC.setText("Add company account");
+//		JButton_CompAC.setActionCommand("jbutton");
+//		JPanel1.add(JButton_CompAC);
+//		JButton_CompAC.setBounds(240,20,192,33);
 		JButton_Deposit.setText("Deposit");
 		JPanel1.add(JButton_Deposit);
 		JButton_Deposit.setBounds(468, 104, 96, 33);
@@ -126,13 +126,13 @@ public class Finco extends javax.swing.JFrame {
 	}
 
 
-	javax.swing.JPanel JPanel1 = new javax.swing.JPanel();
-	javax.swing.JButton JButton_PerAC = new javax.swing.JButton();
-	javax.swing.JButton JButton_CompAC = new javax.swing.JButton();
-	javax.swing.JButton JButton_Deposit = new javax.swing.JButton();
-	javax.swing.JButton JButton_Withdraw = new javax.swing.JButton();
-	javax.swing.JButton JButton_Addinterest = new javax.swing.JButton();
-	javax.swing.JButton JButton_Exit = new javax.swing.JButton();
+	protected javax.swing.JPanel JPanel1 = new javax.swing.JPanel();
+	protected javax.swing.JButton JButton_PerAC = new javax.swing.JButton();
+	protected javax.swing.JButton JButton_CompAC = new javax.swing.JButton();
+	protected javax.swing.JButton JButton_Deposit = new javax.swing.JButton();
+	protected javax.swing.JButton JButton_Withdraw = new javax.swing.JButton();
+	protected javax.swing.JButton JButton_Addinterest = new javax.swing.JButton();
+	protected javax.swing.JButton JButton_Exit = new javax.swing.JButton();
 
 	void exitApplication() {
 		try {
@@ -189,7 +189,7 @@ public class Finco extends javax.swing.JFrame {
 		System.exit(0);
 	}
 
-	void JButtonPerAC_actionPerformed(java.awt.event.ActionEvent event) {
+	protected void JButtonPerAC_actionPerformed(java.awt.event.ActionEvent event) {
 		/*
 		 JDialog_AddAcc type object is for adding personal information
 		 construct a JDialog_AddAcc type object
@@ -217,7 +217,7 @@ public class Finco extends javax.swing.JFrame {
 
 	}
 
-	void JButtonCompAC_actionPerformed(java.awt.event.ActionEvent event) {
+	protected void JButtonCompAC_actionPerformed(java.awt.event.ActionEvent event) {
 		/*
 		 construct a JDialog_AddCompAcc type object 
 		 set the boundaries and 
@@ -244,7 +244,7 @@ public class Finco extends javax.swing.JFrame {
 
 	}
 
-	void JButtonDeposit_actionPerformed(java.awt.event.ActionEvent event) {
+	protected void JButtonDeposit_actionPerformed(java.awt.event.ActionEvent event) {
 		// get selected name
 		int selection = JTable1.getSelectionModel().getMinSelectionIndex();
 		if (selection >= 0) {
@@ -267,7 +267,7 @@ public class Finco extends javax.swing.JFrame {
 
 	}
 
-	void JButtonWithdraw_actionPerformed(java.awt.event.ActionEvent event) {
+	protected void JButtonWithdraw_actionPerformed(java.awt.event.ActionEvent event) {
 		// get selected name
 		int selection = JTable1.getSelectionModel().getMinSelectionIndex();
 		if (selection >= 0) {
@@ -292,7 +292,7 @@ public class Finco extends javax.swing.JFrame {
 
 	}
 
-	void JButtonAddinterest_actionPerformed(java.awt.event.ActionEvent event) {
+	protected void JButtonAddinterest_actionPerformed(java.awt.event.ActionEvent event) {
 		JOptionPane.showMessageDialog(JButton_Addinterest, "Add interest to all accounts", "Add interest to all accounts", JOptionPane.WARNING_MESSAGE);
 
 	}
