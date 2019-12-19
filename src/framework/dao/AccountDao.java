@@ -7,7 +7,7 @@ import framework.entry.IEntry;
 import javax.swing.*;
 import java.util.*;
 
-public class AccountDao implements IAccountDao {
+public class AccountDao implements IDao<AbstractAccount> {
     private HashMap<String,AbstractAccount> accountList = new HashMap<>();
     private static AccountDao accountDao=null;
 

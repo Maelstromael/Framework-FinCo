@@ -8,7 +8,8 @@ import framework.UserType;
 import framework.Utils;
 import framework.account.AbstractAccount;
 import framework.controller.UserController;
-import framework.factory.SimpleFactory;
+import framework.factory.AccountFactory;
+import framework.factory.CustomerFactory;
 import framework.service.UserService;
 import framework.user.AbstractUser;
 
@@ -205,7 +206,7 @@ public class JDialog_AddAcc extends javax.swing.JDialog
 			UserController uc = new UserController(new UserService());
 			AbstractUser user  = uc.createUser(UserType.PERSON,JTextField_NAME.getText(), JTextField_STR.getText(), JTextField_CT.getText(), JTextField_ST.getText(), JTextField_EM.getText(), JTextField_ZIP.getText(), null);
 			if(user != null){
-				AbstractAccount acc = uc.createAccount(AccountTypes.BASIC,JTextField_ACNR.getText(),user, SimpleFactory.getInstance());
+				AbstractAccount acc = uc.createAccount(AccountTypes.BASIC,JTextField_ACNR.getText(),user, AccountFactory.getInstance());
 				if(acc != null) {
 					JOptionPane.showMessageDialog(parentframe, "Account Creation Successful");
 					parentframe.newaccount=true;

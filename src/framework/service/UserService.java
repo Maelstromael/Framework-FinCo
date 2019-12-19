@@ -6,7 +6,8 @@ import framework.account.AbstractAccount;
 import framework.dao.AccountDao;
 import framework.dao.IDao;
 import framework.dao.UserDao;
-import framework.factory.SimpleFactory;
+import framework.factory.AccountFactory;
+import framework.factory.CustomerFactory;
 import framework.user.AbstractUser;
 
 import java.util.List;
@@ -17,7 +18,7 @@ public class UserService implements IUserService {
 
     @Override
     public AbstractUser createUser(UserType type,String name, String street, String city, String state, String email, String zip, List<AbstractAccount> accounts) {
-        SimpleFactory simpleFactory = SimpleFactory.getInstance();
+        CustomerFactory simpleFactory = CustomerFactory.getInstance();
         return userIDao.save(simpleFactory.createUser(type, name, street, city, state, email, zip, accounts));
     }
 
@@ -32,7 +33,7 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user, SimpleFactory factory) {
+    public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user, AccountFactory factory) {
         System.err.println("UserService :: createAccount() Entered");
         //SimpleFactory simpleFactory = SimpleFactory.getInstance();
         return accountIDao.save(factory.createAccount(accountTypes, accountNumber, user));

@@ -1,6 +1,5 @@
 package framework.dao;
 
-import framework.account.AbstractAccount;
 import framework.user.AbstractUser;
 
 import java.util.HashMap;
@@ -8,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-public class UserDao implements IUserDao {
+public class UserDao implements IDao<AbstractUser> {
     private HashMap<String,AbstractUser> userList = new HashMap<>();
     private int lastId = 1;
     @Override

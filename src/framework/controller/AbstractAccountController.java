@@ -4,9 +4,8 @@ import framework.account.AbstractAccount;
 import framework.service.IAccountService;
 
 import java.util.*;
-import java.util.ArrayList;
 
-public abstract class AbstractAccountController implements IAccountController{
+public abstract class AbstractAccountController {
     protected IAccountService accountService;
 
     public AbstractAccountController(IAccountService accountService) {

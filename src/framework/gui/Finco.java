@@ -262,6 +262,7 @@ public class Finco extends javax.swing.JFrame {
 			//double currentamount = Double.parseDouble(samount);
 			double newamount = currentamount + deposit;
 			model.setValueAt(newamount, selection, 5);
+			amountDeposit = "";
 		}
 
 
@@ -284,9 +285,12 @@ public class Finco extends javax.swing.JFrame {
 			//double currentamount = Double.parseDouble(samount);
 			double newamount = currentamount - withdraw;
 			model.setValueAt(newamount, selection, 5);
+
 			if (newamount < 0) {
 				JOptionPane.showMessageDialog(JButton_Withdraw, " Account " + accnr + " : balance is negative: $" + String.valueOf(newamount) + " !", "Warning: negative balance", JOptionPane.WARNING_MESSAGE);
 			}
+
+			amountDeposit = "";
 		}
 
 
