@@ -29,6 +29,7 @@ public class BankAccountFactory extends AccountFactory {
 
 
     public Account createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user) {
+        System.err.println("BankAccountFactory :: createAccount() Entered");
         Account newAcc = null;
         if (accountTypes== AccountTypes.SAVINGS){
             newAcc = new SavingsAccount(accountNumber, user);

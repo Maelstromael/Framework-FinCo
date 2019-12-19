@@ -1,9 +1,16 @@
 package framework.gui;
 
 
+import framework.AccountTypes;
+import framework.UserType;
 import framework.account.AbstractAccount;
+import framework.account.Account;
 import framework.controller.AccountController;
+import framework.controller.UserController;
+import framework.factory.AccountFactory;
 import framework.service.AccountService;
+import framework.service.UserService;
+import framework.user.AbstractUser;
 
 import java.awt.*;
 import java.util.*;
@@ -30,7 +37,7 @@ public class Finco extends javax.swing.JFrame {
 		myframe = this;
 
 		setTitle("Finco Application");
-		setDefaultCloseOperation(javax.swing.JFrame.DO_NOTHING_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		getContentPane().setLayout(new BorderLayout(0, 0));
 		setSize(575, 310);
 		setVisible(false);
@@ -96,7 +103,34 @@ public class Finco extends javax.swing.JFrame {
 		JButton_Withdraw.addActionListener(lSymAction);
 		JButton_Addinterest.addActionListener(lSymAction);
 
+		fincoDb();
+
 		refreshTable();
+
+	}
+
+	public static void fincoDb(){
+		UserController uc = new UserController(new UserService());
+		AbstractUser user1  = uc.createUser(UserType.PERSON,"Adeola Adeleke", "1000 N Str", "Fairfield", "Iowa", "aadeola@mum.edu", "52557", null);
+		AbstractUser user2  = uc.createUser(UserType.PERSON,"Ny Andriantsoa", "1000 N Str", "Fairfield", "Iowa", "aadeola@mum.edu", "52557", null);
+		AbstractUser user3  = uc.createUser(UserType.PERSON,"Lucky Gilbert", "1000N Str", "Fairfield", "Iowa", "aadeola@mum.edu", "52557", null);
+		if(user1 != null) {
+			AbstractAccount acc = uc.createAccount(AccountTypes.BASIC, "627468", user1, AccountFactory.getInstance());
+			if (acc != null)
+				System.err.println("User 1: Account Creation Successful");
+		}
+
+		if(user2 != null) {
+			AbstractAccount acc = uc.createAccount(AccountTypes.BASIC, "535353", user2, AccountFactory.getInstance());
+			if (acc != null)
+				System.err.println("User 2: Account Creation Successful");
+		}
+		if(user3 != null) {
+			AbstractAccount acc = uc.createAccount(AccountTypes.BASIC, "24424", user3, AccountFactory.getInstance());
+			if (acc != null)
+				System.err.println("User 3: Account Creation Successful");
+		}
+
 
 	}
 
@@ -305,7 +339,7 @@ public class Finco extends javax.swing.JFrame {
 	void refreshTable() {
 		model.setRowCount(0);
 		AccountController auc = new AccountController(new AccountService());
-		List<AbstractAccount> accounts = auc.getAllAccounts();
+		List<Account> accounts = auc.getAllAccounts();
 		for (AbstractAccount acc : accounts) {
 			if (acc != null) {
 				rowdata[0] = acc.getAccountNbr();

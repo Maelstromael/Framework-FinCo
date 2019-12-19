@@ -94,6 +94,9 @@ public abstract class AbstractAccount implements IAccount{
                 "accNbr='" + accNbr + '\'' +
                 ", currentBalance=" + currentBalance +
                 ", user=" + user +
+                ", accTypes=" + accTypes +
+                ", interest=" + interest +
+                ", entries=" + entries +
                 '}';
     }
 

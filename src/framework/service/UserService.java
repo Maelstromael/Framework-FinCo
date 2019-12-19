@@ -3,6 +3,7 @@ package framework.service;
 import framework.AccountTypes;
 import framework.UserType;
 import framework.account.AbstractAccount;
+import framework.account.Account;
 import framework.dao.AccountDao;
 import framework.dao.IDao;
 import framework.dao.UserDao;
@@ -35,7 +36,8 @@ public class UserService implements IUserService {
     @Override
     public AbstractAccount createAccount(AccountTypes accountTypes, String accountNumber, AbstractUser user, AccountFactory factory) {
         System.err.println("UserService :: createAccount() Entered");
-        //SimpleFactory simpleFactory = SimpleFactory.getInstance();
-        return accountIDao.save(factory.createAccount(accountTypes, accountNumber, user));
+        AbstractAccount newAcc = factory.createAccount(accountTypes, accountNumber, user);
+        if(newAcc == null) return null;
+        return accountIDao.save(newAcc);
     }
 }

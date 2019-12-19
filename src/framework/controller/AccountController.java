@@ -1,6 +1,7 @@
 package framework.controller;
 
 import framework.account.AbstractAccount;
+import framework.account.Account;
 import framework.service.IAccountService;
 
 import java.util.ArrayList;
@@ -35,7 +36,7 @@ public class AccountController extends AbstractAccountController {
     }
 
     @Override
-    public List<AbstractAccount> getAllAccounts() {
+    public List<Account> getAllAccounts() {
         System.err.println("AccountController :: getAllAccounts() Entered");
         return accountService.getAll();
     }

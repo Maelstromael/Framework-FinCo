@@ -1,9 +1,17 @@
 package banking.gui;
 
+import banking.factory.BankAccountFactory;
+import framework.AccountTypes;
+import framework.UserType;
 import framework.account.AbstractAccount;
+import framework.account.Account;
 import framework.controller.AccountController;
+import framework.controller.UserController;
+import framework.factory.AccountFactory;
 import framework.gui.*;
 import framework.service.AccountService;
+import framework.service.UserService;
+import framework.user.AbstractUser;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -62,7 +70,37 @@ public class Bank extends Finco {
 		JButton_Addinterest.setText("Add interest");
 		JPanel1.add(JButton_Addinterest);
 
+		bankDb();
 		refreshTable();
+
+    }
+
+    private void bankDb(){
+        UserController uc = new UserController(new UserService());
+        AbstractUser user1  = uc.createUser(UserType.PERSON,"Adeola Adeleke", "1000 N Str", "Fairfield", "Iowa", "aadeola@mum.edu", "52557", null);
+        AbstractUser user2  = uc.createUser(UserType.PERSON,"Ny Andriantsoa", "1000 N Str", "Fairfield", "Iowa", "aadeola@mum.edu", "52557", null);
+        AbstractUser user3  = uc.createUser(UserType.PERSON,"Lucky Gilbert", "1000N Str", "Fairfield", "Iowa", "aadeola@mum.edu", "52557", null);
+       // AccountController auc = new AccountController(new AccountService());
+        if(user1 != null) {
+            AbstractAccount acc = uc.createAccount(AccountTypes.CHECKINGS, "627468", user1, BankAccountFactory.getInstance());
+            if (acc != null) {
+                System.err.println("User 1: Account Creation Successful");
+            }
+        }
+
+        if(user2 != null) {
+            AbstractAccount acc = uc.createAccount(AccountTypes.SAVINGS, "535353", user2, BankAccountFactory.getInstance());
+            if (acc != null) {
+                System.err.println("User 2: Account Creation Successful");
+            }
+        }
+        if(user3 != null) {
+            AbstractAccount acc = uc.createAccount(AccountTypes.CHECKINGS, "24424", user3, BankAccountFactory.getInstance());
+            if (acc != null) {
+                System.err.println("User 3: Account Creation Successful");
+                //auc.deposit("24424", Double.parseDouble("6766"));
+            }
+        }
 
     }
 
@@ -166,7 +204,7 @@ public class Bank extends Finco {
         if(model != null) {
             model.setRowCount(0);
             AccountController auc = new AccountController(new AccountService());
-            List<AbstractAccount> accounts = auc.getAllAccounts();
+            List<Account> accounts = auc.getAllAccounts();
             System.err.println(accounts.toString());
             for (AbstractAccount acc : accounts) {
                 if (acc != null) {

@@ -1,6 +1,7 @@
 package framework.service;
 
 import framework.account.AbstractAccount;
+import framework.account.Account;
 import framework.dao.AccountDao;
 import framework.dao.IDao;
 import framework.entry.IEntry;
@@ -14,7 +15,7 @@ public class AccountService implements IAccountService {
     public boolean deposit(String name, double amount) {
         System.err.println("AccountService :: deposit() name: "+name);
         if (name!=null){
-            AbstractAccount account = accountIDao.get(name);
+           AbstractAccount account = accountIDao.get(name);
             System.err.println("AccountService :: withdraw() Entered: accountIDao.get(name) ");
             if (account!=null){
                 boolean res = account.deposit(amount);
